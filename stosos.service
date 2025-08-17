@@ -1,0 +1,32 @@
+[Unit]
+Description=StosOS Desktop Environment
+After=graphical-session.target
+Wants=graphical-session.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/stosos
+Environment=DISPLAY=:0
+Environment=PULSE_RUNTIME_PATH=/run/user/1000/pulse
+ExecStart=/home/pi/stosos/venv/bin/python /home/pi/stosos/main.py
+ExecStop=/bin/kill -TERM $MAINPID
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+# Resource limits
+MemoryMax=1G
+CPUQuota=80%
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/home/pi/stosos/data /home/pi/stosos/logs /home/pi/stosos/config
+
+[Install]
+WantedBy=graphical-session.target

@@ -147,6 +147,34 @@ class StosOSAnimations:
         return anim
     
     @classmethod
+    def slide_in_from_right(cls, widget: Widget, duration: Optional[float] = None,
+                           callback: Optional[Callable] = None) -> Animation:
+        """
+        Slide in from right animation
+        
+        Args:
+            widget: Widget to animate
+            duration: Animation duration (uses theme default if None)
+            callback: Optional callback when animation completes
+            
+        Returns:
+            Animation instance
+        """
+        duration = duration or StosOSTheme.get_animation_config('duration_normal')
+        
+        original_x = widget.x
+        widget.x = widget.parent.width if widget.parent else widget.width
+        widget.opacity = 0
+        
+        anim = Animation(x=original_x, opacity=1, duration=duration, transition='out_cubic')
+        
+        if callback:
+            anim.bind(on_complete=lambda *args: callback())
+        
+        anim.start(widget)
+        return anim
+    
+    @classmethod
     def scale_in(cls, widget: Widget, duration: Optional[float] = None,
                  callback: Optional[Callable] = None) -> Animation:
         """

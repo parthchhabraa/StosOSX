@@ -25,27 +25,35 @@ stosos/
 └── data/                  # SQLite database and user data
 ```
 
-## Setup Instructions
+## Documentation
 
-### 1. Clone and Setup Environment
+**📚 Complete Documentation Available in [`docs/`](docs/README.md)**
+
+### Quick Start Guides
+- **[Installation Guide](docs/INSTALLATION_GUIDE.md)** - Complete setup instructions for Raspberry Pi 4
+- **[API Configuration](docs/API_CONFIGURATION.md)** - Configure Google Calendar, Spotify, and other services
+- **[Voice Assistant Setup](docs/VOICE_ASSISTANT_SETUP.md)** - Set up AI-powered voice control
+- **[User Manual](docs/USER_MANUAL.md)** - Complete feature reference and usage guide
+- **[Troubleshooting Guide](docs/TROUBLESHOOTING_GUIDE.md)** - Solutions for common issues
+
+### Quick Setup (Development)
+
+For development and testing:
 
 ```bash
+# 1. Clone and setup environment
 cd stosos
 chmod +x setup_env.sh
 ./setup_env.sh
-```
 
-### 2. Activate Virtual Environment
-
-```bash
+# 2. Activate virtual environment
 source venv/bin/activate
-```
 
-### 3. Run StosOS
-
-```bash
+# 3. Run StosOS
 python main.py
 ```
+
+**For production installation, use the [Installation Guide](docs/INSTALLATION_GUIDE.md)**
 
 ## Development
 

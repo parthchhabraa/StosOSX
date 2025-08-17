@@ -24,8 +24,12 @@ from core.base_module import BaseModule
 from core.screen_manager import StosOSScreenManager
 from core.error_handler import error_handler, ErrorType, ErrorSeverity
 from core.power_manager import power_manager, PowerConfig
+from core.system_manager import SystemManager
+from core.update_manager import UpdateManager
 from core.test_module import TestModule
 from modules.ui_demo import UIDemoModule
+from modules.calendar_module import CalendarModule
+from modules.dashboard import DashboardModule
 from ui.theme import StosOSTheme
 from ui.animations import StosOSAnimations
 from ui.branding_screen import BrandingScreenManager
@@ -43,6 +47,8 @@ class StosOSApp(App):
         self.branding_manager = BrandingScreenManager()
         self.main_interface_ready = False
         self.power_manager = power_manager
+        self.system_manager = None
+        self.update_manager = None
         
     def build(self):
         """Build the main application interface"""
@@ -55,6 +61,13 @@ class StosOSApp(App):
             # Set debug mode based on config
             debug_mode = self.config_manager.get('app.debug', False)
             stosos_logger.set_debug_mode(debug_mode)
+            
+            # Initialize system manager
+            self.system_manager = SystemManager(self.config_manager, logger)
+            self.system_manager.register_shutdown_callback(self._on_system_shutdown)
+            
+            # Initialize update manager
+            self.update_manager = UpdateManager(self.config_manager, logger)
             
             # Create enhanced screen manager
             self.screen_manager = StosOSScreenManager()
@@ -189,8 +202,15 @@ class StosOSApp(App):
         try:
             logger.info("Application started - showing branding sequence")
             
+            # Start system health monitoring
+            self.system_manager.start_health_monitoring()
+            
             # Start power management monitoring
             self.power_manager.start_monitoring()
+            
+            # Check for updates in background
+            from kivy.clock import Clock
+            Clock.schedule_once(self._check_for_updates, 5.0)  # Check after 5 seconds
             
             # Start branding sequence
             self.branding_manager.show_branding(
@@ -224,6 +244,16 @@ class StosOSApp(App):
     def _initialize_modules(self):
         """Initialize and register application modules"""
         try:
+            # Register dashboard module first (main interface)
+            dashboard_module = DashboardModule()
+            # Pass config manager to dashboard
+            dashboard_module._config_manager = self.config_manager
+            dashboard_module._screen_manager = self.screen_manager
+            if self.register_module(dashboard_module):
+                logger.info("Dashboard module registered successfully")
+            else:
+                logger.error("Failed to register dashboard module")
+            
             # Register test module to verify framework
             test_module = TestModule()
             if self.register_module(test_module):
@@ -237,6 +267,57 @@ class StosOSApp(App):
                 logger.info("UI Demo module registered successfully")
             else:
                 logger.error("Failed to register UI demo module")
+            
+            # Register calendar module
+            calendar_module = CalendarModule()
+            if self.register_module(calendar_module):
+                logger.info("Calendar module registered successfully")
+            else:
+                logger.error("Failed to register calendar module")
+            
+            # Register task manager module
+            try:
+                from modules.task_manager import TaskManagerModule
+                task_manager_module = TaskManagerModule()
+                if self.register_module(task_manager_module):
+                    logger.info("Task Manager module registered successfully")
+                else:
+                    logger.error("Failed to register Task Manager module")
+            except ImportError as e:
+                logger.warning(f"Task Manager module not available: {e}")
+            
+            # Register idea board module
+            try:
+                from modules.idea_board import IdeaBoardModule
+                idea_board_module = IdeaBoardModule()
+                if self.register_module(idea_board_module):
+                    logger.info("Idea Board module registered successfully")
+                else:
+                    logger.error("Failed to register Idea Board module")
+            except ImportError as e:
+                logger.warning(f"Idea Board module not available: {e}")
+            
+            # Register study tracker module
+            try:
+                from modules.study_tracker import StudyTrackerModule
+                study_tracker_module = StudyTrackerModule()
+                if self.register_module(study_tracker_module):
+                    logger.info("Study Tracker module registered successfully")
+                else:
+                    logger.error("Failed to register Study Tracker module")
+            except ImportError as e:
+                logger.warning(f"Study Tracker module not available: {e}")
+            
+            # Register smart home module
+            try:
+                from modules.smart_home import SmartHomeModule
+                smart_home_module = SmartHomeModule()
+                if self.register_module(smart_home_module):
+                    logger.info("Smart Home module registered successfully")
+                else:
+                    logger.error("Failed to register Smart Home module")
+            except ImportError as e:
+                logger.warning(f"Smart Home module not available: {e}")
             
             self.main_interface_ready = True
             
@@ -252,11 +333,11 @@ class StosOSApp(App):
             self.screen_manager.transition.duration = 0.5
             self.screen_manager.current = 'main'
             
-            # Navigate to UI demo to showcase the theme engine
+            # Navigate to dashboard as the main interface
             if self.main_interface_ready:
                 from kivy.clock import Clock
                 Clock.schedule_once(
-                    lambda dt: self.screen_manager.navigate_to_module("ui_demo"), 
+                    lambda dt: self.screen_manager.navigate_to_module("dashboard"), 
                     0.6  # Wait for transition to complete
                 )
             
@@ -271,6 +352,10 @@ class StosOSApp(App):
         """Called when the application stops"""
         try:
             logger.info("Application stopping")
+            
+            # Stop system monitoring
+            if self.system_manager:
+                self.system_manager.stop_health_monitoring()
             
             # Stop power management
             self.power_manager.stop_monitoring()
@@ -321,6 +406,43 @@ class StosOSApp(App):
     def get_module(self, module_id: str) -> BaseModule:
         """Get a registered module by ID"""
         return self.module_registry.get(module_id)
+    
+    def _check_for_updates(self, dt):
+        """Check for updates in background"""
+        try:
+            if self.update_manager:
+                update_info = self.update_manager.check_for_updates()
+                if update_info and update_info.get('available'):
+                    logger.info(f"Update available: {update_info['version']}")
+                    # Could show notification to user here
+        except Exception as e:
+            logger.error(f"Error checking for updates: {e}")
+    
+    def _on_system_shutdown(self):
+        """Called by system manager during shutdown"""
+        try:
+            logger.info("System shutdown callback triggered")
+            # Perform any app-specific cleanup here
+            self.on_stop()
+        except Exception as e:
+            logger.error(f"Error in shutdown callback: {e}")
+    
+    def restart_application(self):
+        """Restart the application"""
+        if self.system_manager:
+            self.system_manager.restart_system()
+    
+    def get_system_health(self):
+        """Get current system health status"""
+        if self.system_manager:
+            return self.system_manager.get_system_health()
+        return {}
+    
+    def get_version_info(self):
+        """Get version information"""
+        if self.update_manager:
+            return self.update_manager.get_version_info()
+        return {'current_version': 'unknown'}
 
 
 if __name__ == '__main__':

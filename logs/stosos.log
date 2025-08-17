@@ -484,3 +484,549 @@ ValueError: Test error for framework testing
 2025-08-17 16:59:48,471 - core.config_manager - INFO - config_manager.py:30 - Configuration loaded successfully
 2025-08-17 16:59:48,471 - core.power_manager - INFO - power_manager.py:125 - Power management monitoring stopped
 2025-08-17 16:59:48,471 - stosos.modules.power_demo - INFO - power_demo.py:277 - Power demo module cleaned up
+2025-08-17 17:06:46,788 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:06:46,789 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:06:46,881 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 17:06:46,882 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_database_simple.py", line 11, in <module>
+2025-08-17 17:06:46,882 - kivy - WARNING - logger.py:390 - stderr:     from core.database_manager import DatabaseManager
+2025-08-17 17:06:46,882 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/core/database_manager.py", line 16, in <module>
+2025-08-17 17:06:46,882 - kivy - WARNING - logger.py:390 - stderr:     from ..models import Task, Idea, StudySession, SmartDevice
+2025-08-17 17:06:46,882 - kivy - WARNING - logger.py:390 - stderr: ImportError: attempted relative import beyond top-level package
+2025-08-17 17:08:17,354 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:08:17,354 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:08:32,646 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:08:32,647 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:09:26,875 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:09:26,879 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:15:48,586 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:15:48,587 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:15:48,593 - kivy - WARNING - logger.py:390 - stderr: test_approaching_deadlines (__main__.TestTaskManagerCore.test_approaching_deadlines)
+2025-08-17 17:15:48,594 - kivy - WARNING - logger.py:390 - stderr: Test approaching deadlines detection ... ok
+2025-08-17 17:15:48,594 - kivy - WARNING - logger.py:390 - stderr: test_create_task (__main__.TestTaskManagerCore.test_create_task)
+2025-08-17 17:15:48,594 - kivy - WARNING - logger.py:390 - stderr: Test creating new task ... ok
+2025-08-17 17:15:48,594 - kivy - WARNING - logger.py:390 - stderr: test_delete_task (__main__.TestTaskManagerCore.test_delete_task)
+2025-08-17 17:15:48,594 - kivy - WARNING - logger.py:390 - stderr: Test deleting task ... ok
+2025-08-17 17:15:48,594 - kivy - WARNING - logger.py:390 - stderr: test_filter_by_category (__main__.TestTaskManagerCore.test_filter_by_category)
+2025-08-17 17:15:48,594 - kivy - WARNING - logger.py:390 - stderr: Test filtering tasks by category ... ok
+2025-08-17 17:15:48,595 - kivy - WARNING - logger.py:390 - stderr: test_filter_by_completion_status (__main__.TestTaskManagerCore.test_filter_by_completion_status)
+2025-08-17 17:15:48,595 - kivy - WARNING - logger.py:390 - stderr: Test filtering tasks by completion status ... ok
+2025-08-17 17:15:48,595 - kivy - WARNING - logger.py:390 - stderr: test_filter_by_priority (__main__.TestTaskManagerCore.test_filter_by_priority)
+2025-08-17 17:15:48,595 - kivy - WARNING - logger.py:390 - stderr: Test filtering tasks by priority ... ok
+2025-08-17 17:15:48,595 - kivy - WARNING - logger.py:390 - stderr: test_initialization (__main__.TestTaskManagerCore.test_initialization)
+2025-08-17 17:15:48,595 - kivy - WARNING - logger.py:390 - stderr: Test core initialization ... ok
+2025-08-17 17:15:48,595 - kivy - WARNING - logger.py:390 - stderr: test_search_functionality (__main__.TestTaskManagerCore.test_search_functionality)
+2025-08-17 17:15:48,595 - kivy - WARNING - logger.py:390 - stderr: Test search functionality ... ok
+2025-08-17 17:15:48,595 - kivy - WARNING - logger.py:390 - stderr: test_sorting (__main__.TestTaskManagerCore.test_sorting)
+2025-08-17 17:15:48,596 - kivy - WARNING - logger.py:390 - stderr: Test task sorting functionality ... FAIL
+2025-08-17 17:15:48,596 - kivy - WARNING - logger.py:390 - stderr: test_statistics (__main__.TestTaskManagerCore.test_statistics)
+2025-08-17 17:15:48,596 - kivy - WARNING - logger.py:390 - stderr: Test statistics calculation ... FAIL
+2025-08-17 17:15:48,596 - kivy - WARNING - logger.py:390 - stderr: test_toggle_completion (__main__.TestTaskManagerCore.test_toggle_completion)
+2025-08-17 17:15:48,596 - kivy - WARNING - logger.py:390 - stderr: Test toggling task completion ... ok
+2025-08-17 17:15:48,596 - kivy - WARNING - logger.py:390 - stderr: test_update_task (__main__.TestTaskManagerCore.test_update_task)
+2025-08-17 17:15:48,597 - kivy - WARNING - logger.py:390 - stderr: Test updating existing task ... ok
+2025-08-17 17:15:48,597 - kivy - WARNING - logger.py:390 - stderr: test_voice_commands (__main__.TestTaskManagerCore.test_voice_commands)
+2025-08-17 17:15:48,597 - kivy - WARNING - logger.py:390 - stderr: Test voice command handling ... ok
+2025-08-17 17:15:48,597 - kivy - WARNING - logger.py:390 - stderr: test_filtering_and_sorting_integration (__main__.TestTaskManagerIntegration.test_filtering_and_sorting_integration)
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr: Test filtering and sorting with real data ... ok
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr: test_full_task_lifecycle (__main__.TestTaskManagerIntegration.test_full_task_lifecycle)
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr: Test complete task lifecycle ... ok
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr: 
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr: ======================================================================
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr: FAIL: test_sorting (__main__.TestTaskManagerCore.test_sorting)
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr: Test task sorting functionality
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr: ----------------------------------------------------------------------
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_task_manager_simple.py", line 295, in test_sorting
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr:     self.assertTrue(self.task_manager.filtered_tasks[0].is_overdue())
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr:     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr: AssertionError: False is not true
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr: 
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr: ======================================================================
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr: FAIL: test_statistics (__main__.TestTaskManagerCore.test_statistics)
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr: Test statistics calculation
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr: ----------------------------------------------------------------------
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_task_manager_simple.py", line 368, in test_statistics
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr:     self.assertEqual(stats["overdue_tasks"], 1)
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr:     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr: AssertionError: 0 != 1
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr: 
+2025-08-17 17:15:48,600 - kivy - WARNING - logger.py:390 - stderr: ----------------------------------------------------------------------
+2025-08-17 17:15:48,601 - kivy - WARNING - logger.py:390 - stderr: Ran 15 tests in 0.007s
+2025-08-17 17:15:48,601 - kivy - WARNING - logger.py:390 - stderr: 
+2025-08-17 17:15:48,601 - kivy - WARNING - logger.py:390 - stderr: FAILED (failures=2)
+2025-08-17 17:15:56,144 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:15:56,144 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:15:56,148 - kivy - WARNING - logger.py:390 - stderr: test_sorting (test_task_manager_simple.TestTaskManagerCore.test_sorting)
+2025-08-17 17:15:56,149 - kivy - WARNING - logger.py:390 - stderr: Test task sorting functionality ... FAIL
+2025-08-17 17:15:56,149 - kivy - WARNING - logger.py:390 - stderr: 
+2025-08-17 17:15:56,149 - kivy - WARNING - logger.py:390 - stderr: ======================================================================
+2025-08-17 17:15:56,149 - kivy - WARNING - logger.py:390 - stderr: FAIL: test_sorting (test_task_manager_simple.TestTaskManagerCore.test_sorting)
+2025-08-17 17:15:56,149 - kivy - WARNING - logger.py:390 - stderr: Test task sorting functionality
+2025-08-17 17:15:56,149 - kivy - WARNING - logger.py:390 - stderr: ----------------------------------------------------------------------
+2025-08-17 17:15:56,149 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 17:15:56,149 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_task_manager_simple.py", line 295, in test_sorting
+2025-08-17 17:15:56,149 - kivy - WARNING - logger.py:390 - stderr:     self.assertTrue(self.task_manager.filtered_tasks[0].is_overdue())
+2025-08-17 17:15:56,149 - kivy - WARNING - logger.py:390 - stderr:     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-17 17:15:56,149 - kivy - WARNING - logger.py:390 - stderr: AssertionError: False is not true
+2025-08-17 17:15:56,149 - kivy - WARNING - logger.py:390 - stderr: 
+2025-08-17 17:15:56,149 - kivy - WARNING - logger.py:390 - stderr: ----------------------------------------------------------------------
+2025-08-17 17:15:56,149 - kivy - WARNING - logger.py:390 - stderr: Ran 1 test in 0.001s
+2025-08-17 17:15:56,149 - kivy - WARNING - logger.py:390 - stderr: 
+2025-08-17 17:15:56,149 - kivy - WARNING - logger.py:390 - stderr: FAILED (failures=1)
+2025-08-17 17:17:30,105 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:17:30,107 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:26:31,434 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:26:31,437 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:27:01,974 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:27:01,975 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:27:26,338 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:27:26,338 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:28:23,189 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:28:23,189 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:29:47,134 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:29:47,135 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:30:35,798 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:30:35,799 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:36:40,872 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:36:40,874 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:36:40,886 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 17:36:40,887 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_idea_board_simple.py", line 235, in run_all_tests
+2025-08-17 17:36:40,887 - kivy - WARNING - logger.py:390 - stderr:     test_idea_model()
+2025-08-17 17:36:40,887 - kivy - WARNING - logger.py:390 - stderr:     ~~~~~~~~~~~~~~~^^
+2025-08-17 17:36:40,887 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_idea_board_simple.py", line 61, in test_idea_model
+2025-08-17 17:36:40,887 - kivy - WARNING - logger.py:390 - stderr:     assert restored_idea.tags == idea.tags
+2025-08-17 17:36:40,887 - kivy - WARNING - logger.py:390 - stderr:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-17 17:36:40,887 - kivy - WARNING - logger.py:390 - stderr: AssertionError
+2025-08-17 17:41:00,509 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:41:00,510 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:41:55,139 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:41:55,141 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:43:20,268 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:43:20,270 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:43:20,350 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 17:43:20,351 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/verify_idea_board.py", line 117, in verify_database_integration
+2025-08-17 17:43:20,351 - kivy - WARNING - logger.py:390 - stderr:     assert len(ideas) == 1, "Content search failed"
+2025-08-17 17:43:20,351 - kivy - WARNING - logger.py:390 - stderr:            ^^^^^^^^^^^^^^^
+2025-08-17 17:43:20,351 - kivy - WARNING - logger.py:390 - stderr: AssertionError: Content search failed
+2025-08-17 17:44:13,850 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:44:13,852 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:44:57,817 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:44:57,819 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:55:06,874 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:55:06,876 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:55:06,890 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 17:55:06,891 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_study_tracker_simple.py", line 18, in <module>
+2025-08-17 17:55:06,891 - kivy - WARNING - logger.py:390 - stderr:     from modules.study_tracker import StudyStats, StudyGoal, PomodoroTimer
+2025-08-17 17:55:06,891 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/__init__.py", line 3, in <module>
+2025-08-17 17:55:06,891 - kivy - WARNING - logger.py:390 - stderr:     from .task_manager import TaskManager
+2025-08-17 17:55:06,891 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/task_manager.py", line 25, in <module>
+2025-08-17 17:55:06,891 - kivy - WARNING - logger.py:390 - stderr:     from ..core.base_module import BaseModule
+2025-08-17 17:55:06,891 - kivy - WARNING - logger.py:390 - stderr: ImportError: attempted relative import beyond top-level package
+2025-08-17 17:57:15,185 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:57:15,186 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:58:25,364 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:58:25,365 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:59:46,471 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:59:46,472 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:59:46,487 - kivy - WARNING - logger.py:390 - stderr: test_pomodoro_timer_formatting (__main__.TestStudyTrackerCore.test_pomodoro_timer_formatting)
+2025-08-17 17:59:46,492 - kivy - WARNING - logger.py:390 - stderr: Test timer formatting functions ... ok
+2025-08-17 17:59:46,492 - kivy - WARNING - logger.py:390 - stderr: test_pomodoro_timer_initialization (__main__.TestStudyTrackerCore.test_pomodoro_timer_initialization)
+2025-08-17 17:59:46,493 - kivy - WARNING - logger.py:390 - stderr: Test Pomodoro timer initialization ... ok
+2025-08-17 17:59:46,493 - kivy - WARNING - logger.py:390 - stderr: test_pomodoro_timer_session_completion (__main__.TestStudyTrackerCore.test_pomodoro_timer_session_completion)
+2025-08-17 17:59:46,494 - kivy - WARNING - logger.py:390 - stderr: Test Pomodoro session completion logic ... FAIL
+2025-08-17 17:59:46,494 - kivy - WARNING - logger.py:390 - stderr: test_study_goal_creation (__main__.TestStudyTrackerCore.test_study_goal_creation)
+2025-08-17 17:59:46,494 - kivy - WARNING - logger.py:390 - stderr: Test StudyGoal creation and serialization ... ok
+2025-08-17 17:59:46,494 - kivy - WARNING - logger.py:390 - stderr: test_study_goal_serialization (__main__.TestStudyTrackerCore.test_study_goal_serialization)
+2025-08-17 17:59:46,495 - kivy - WARNING - logger.py:390 - stderr: Test StudyGoal serialization and deserialization ... ok
+2025-08-17 17:59:46,495 - kivy - WARNING - logger.py:390 - stderr: test_study_stats_daily (__main__.TestStudyTrackerCore.test_study_stats_daily)
+2025-08-17 17:59:46,495 - kivy - WARNING - logger.py:390 - stderr: Test daily statistics calculation ... ok
+2025-08-17 17:59:46,495 - kivy - WARNING - logger.py:390 - stderr: test_study_stats_streak (__main__.TestStudyTrackerCore.test_study_stats_streak)
+2025-08-17 17:59:46,496 - kivy - WARNING - logger.py:390 - stderr: Test study streak calculation ... ok
+2025-08-17 17:59:46,496 - kivy - WARNING - logger.py:390 - stderr: test_study_stats_subject_progress (__main__.TestStudyTrackerCore.test_study_stats_subject_progress)
+2025-08-17 17:59:46,496 - kivy - WARNING - logger.py:390 - stderr: Test subject-specific progress calculation ... ok
+2025-08-17 17:59:46,496 - kivy - WARNING - logger.py:390 - stderr: test_study_stats_weekly (__main__.TestStudyTrackerCore.test_study_stats_weekly)
+2025-08-17 17:59:46,497 - kivy - WARNING - logger.py:390 - stderr: Test weekly statistics calculation ... ok
+2025-08-17 17:59:46,497 - kivy - WARNING - logger.py:390 - stderr: test_study_session_creation (__main__.TestStudySessionModel.test_study_session_creation)
+2025-08-17 17:59:46,497 - kivy - WARNING - logger.py:390 - stderr: Test StudySession creation ... ok
+2025-08-17 17:59:46,497 - kivy - WARNING - logger.py:390 - stderr: test_study_session_duration (__main__.TestStudySessionModel.test_study_session_duration)
+2025-08-17 17:59:46,497 - kivy - WARNING - logger.py:390 - stderr: Test duration calculation ... ok
+2025-08-17 17:59:46,497 - kivy - WARNING - logger.py:390 - stderr: test_study_session_end (__main__.TestStudySessionModel.test_study_session_end)
+2025-08-17 17:59:46,497 - kivy - WARNING - logger.py:390 - stderr: Test ending a study session ... ok
+2025-08-17 17:59:46,497 - kivy - WARNING - logger.py:390 - stderr: test_study_session_formatting (__main__.TestStudySessionModel.test_study_session_formatting)
+2025-08-17 17:59:46,497 - kivy - WARNING - logger.py:390 - stderr: Test formatted duration output ... ok
+2025-08-17 17:59:46,497 - kivy - WARNING - logger.py:390 - stderr: test_study_session_serialization (__main__.TestStudySessionModel.test_study_session_serialization)
+2025-08-17 17:59:46,497 - kivy - WARNING - logger.py:390 - stderr: Test StudySession serialization ... ok
+2025-08-17 17:59:46,497 - kivy - WARNING - logger.py:390 - stderr: test_study_session_tasks (__main__.TestStudySessionModel.test_study_session_tasks)
+2025-08-17 17:59:46,497 - kivy - WARNING - logger.py:390 - stderr: Test task completion tracking ... ok
+2025-08-17 17:59:46,497 - kivy - WARNING - logger.py:390 - stderr: test_study_session_validation (__main__.TestStudySessionModel.test_study_session_validation)
+2025-08-17 17:59:46,497 - kivy - WARNING - logger.py:390 - stderr: Test StudySession validation ... ok
+2025-08-17 17:59:46,497 - kivy - WARNING - logger.py:390 - stderr: test_create_study_session (__main__.TestDatabaseIntegration.test_create_study_session)
+2025-08-17 17:59:46,500 - kivy - WARNING - logger.py:390 - stderr: Test creating study session in database ... ok
+2025-08-17 17:59:46,500 - kivy - WARNING - logger.py:390 - stderr: test_delete_study_session (__main__.TestDatabaseIntegration.test_delete_study_session)
+2025-08-17 17:59:46,501 - kivy - WARNING - logger.py:390 - stderr: Test deleting study session from database ... ok
+2025-08-17 17:59:46,502 - kivy - WARNING - logger.py:390 - stderr: test_get_study_session (__main__.TestDatabaseIntegration.test_get_study_session)
+2025-08-17 17:59:46,503 - kivy - WARNING - logger.py:390 - stderr: Test retrieving study session from database ... ok
+2025-08-17 17:59:46,503 - kivy - WARNING - logger.py:390 - stderr: test_get_study_sessions_filtering (__main__.TestDatabaseIntegration.test_get_study_sessions_filtering)
+2025-08-17 17:59:46,507 - kivy - WARNING - logger.py:390 - stderr: Test filtering study sessions ... ok
+2025-08-17 17:59:46,507 - kivy - WARNING - logger.py:390 - stderr: test_update_study_session (__main__.TestDatabaseIntegration.test_update_study_session)
+2025-08-17 17:59:46,508 - kivy - WARNING - logger.py:390 - stderr: Test updating study session in database ... ok
+2025-08-17 17:59:46,508 - kivy - WARNING - logger.py:390 - stderr: 
+2025-08-17 17:59:46,508 - kivy - WARNING - logger.py:390 - stderr: ======================================================================
+2025-08-17 17:59:46,508 - kivy - WARNING - logger.py:390 - stderr: FAIL: test_pomodoro_timer_session_completion (__main__.TestStudyTrackerCore.test_pomodoro_timer_session_completion)
+2025-08-17 17:59:46,508 - kivy - WARNING - logger.py:390 - stderr: Test Pomodoro session completion logic
+2025-08-17 17:59:46,508 - kivy - WARNING - logger.py:390 - stderr: ----------------------------------------------------------------------
+2025-08-17 17:59:46,508 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 17:59:46,508 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_study_tracker.py", line 88, in test_pomodoro_timer_session_completion
+2025-08-17 17:59:46,508 - kivy - WARNING - logger.py:390 - stderr:     self.assertEqual(timer.current_time, timer.long_break_duration)
+2025-08-17 17:59:46,508 - kivy - WARNING - logger.py:390 - stderr:     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-17 17:59:46,508 - kivy - WARNING - logger.py:390 - stderr: AssertionError: 300 != 900
+2025-08-17 17:59:46,508 - kivy - WARNING - logger.py:390 - stderr: 
+2025-08-17 17:59:46,508 - kivy - WARNING - logger.py:390 - stderr: ----------------------------------------------------------------------
+2025-08-17 17:59:46,508 - kivy - WARNING - logger.py:390 - stderr: Ran 21 tests in 0.021s
+2025-08-17 17:59:46,508 - kivy - WARNING - logger.py:390 - stderr: 
+2025-08-17 17:59:46,508 - kivy - WARNING - logger.py:390 - stderr: FAILED (failures=1)
+2025-08-17 17:59:56,654 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 17:59:56,654 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 17:59:56,667 - kivy - WARNING - logger.py:390 - stderr: test_create_study_session (test_study_tracker.TestDatabaseIntegration.test_create_study_session)
+2025-08-17 17:59:56,675 - kivy - WARNING - logger.py:390 - stderr: Test creating study session in database ... ok
+2025-08-17 17:59:56,675 - kivy - WARNING - logger.py:390 - stderr: test_delete_study_session (test_study_tracker.TestDatabaseIntegration.test_delete_study_session)
+2025-08-17 17:59:56,679 - kivy - WARNING - logger.py:390 - stderr: Test deleting study session from database ... /Users/parthchhabra/Desktop/StosOSRpi/stosos/core/database_manager.py:75: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x10b21b3d0>
+2025-08-17 17:59:56,679 - kivy - WARNING - logger.py:390 - stderr:   cursor = conn.cursor()
+2025-08-17 17:59:56,679 - kivy - WARNING - logger.py:390 - stderr: ResourceWarning: Enable tracemalloc to get the object allocation traceback
+2025-08-17 17:59:56,680 - kivy - WARNING - logger.py:390 - stderr: ok
+2025-08-17 17:59:56,680 - kivy - WARNING - logger.py:390 - stderr: test_get_study_session (test_study_tracker.TestDatabaseIntegration.test_get_study_session)
+2025-08-17 17:59:56,681 - kivy - WARNING - logger.py:390 - stderr: Test retrieving study session from database ... ok
+2025-08-17 17:59:56,681 - kivy - WARNING - logger.py:390 - stderr: test_get_study_sessions_filtering (test_study_tracker.TestDatabaseIntegration.test_get_study_sessions_filtering)
+2025-08-17 17:59:56,684 - kivy - WARNING - logger.py:390 - stderr: Test filtering study sessions ... ok
+2025-08-17 17:59:56,684 - kivy - WARNING - logger.py:390 - stderr: test_update_study_session (test_study_tracker.TestDatabaseIntegration.test_update_study_session)
+2025-08-17 17:59:56,685 - kivy - WARNING - logger.py:390 - stderr: Test updating study session in database ... ok
+2025-08-17 17:59:56,685 - kivy - WARNING - logger.py:390 - stderr: test_study_session_creation (test_study_tracker.TestStudySessionModel.test_study_session_creation)
+2025-08-17 17:59:56,685 - kivy - WARNING - logger.py:390 - stderr: Test StudySession creation ... ok
+2025-08-17 17:59:56,685 - kivy - WARNING - logger.py:390 - stderr: test_study_session_duration (test_study_tracker.TestStudySessionModel.test_study_session_duration)
+2025-08-17 17:59:56,685 - kivy - WARNING - logger.py:390 - stderr: Test duration calculation ... ok
+2025-08-17 17:59:56,685 - kivy - WARNING - logger.py:390 - stderr: test_study_session_end (test_study_tracker.TestStudySessionModel.test_study_session_end)
+2025-08-17 17:59:56,685 - kivy - WARNING - logger.py:390 - stderr: Test ending a study session ... ok
+2025-08-17 17:59:56,685 - kivy - WARNING - logger.py:390 - stderr: test_study_session_formatting (test_study_tracker.TestStudySessionModel.test_study_session_formatting)
+2025-08-17 17:59:56,686 - kivy - WARNING - logger.py:390 - stderr: Test formatted duration output ... ok
+2025-08-17 17:59:56,686 - kivy - WARNING - logger.py:390 - stderr: test_study_session_serialization (test_study_tracker.TestStudySessionModel.test_study_session_serialization)
+2025-08-17 17:59:56,686 - kivy - WARNING - logger.py:390 - stderr: Test StudySession serialization ... ok
+2025-08-17 17:59:56,686 - kivy - WARNING - logger.py:390 - stderr: test_study_session_tasks (test_study_tracker.TestStudySessionModel.test_study_session_tasks)
+2025-08-17 17:59:56,686 - kivy - WARNING - logger.py:390 - stderr: Test task completion tracking ... ok
+2025-08-17 17:59:56,686 - kivy - WARNING - logger.py:390 - stderr: test_study_session_validation (test_study_tracker.TestStudySessionModel.test_study_session_validation)
+2025-08-17 17:59:56,686 - kivy - WARNING - logger.py:390 - stderr: Test StudySession validation ... ok
+2025-08-17 17:59:56,686 - kivy - WARNING - logger.py:390 - stderr: test_pomodoro_timer_formatting (test_study_tracker.TestStudyTrackerCore.test_pomodoro_timer_formatting)
+2025-08-17 17:59:56,687 - kivy - WARNING - logger.py:390 - stderr: Test timer formatting functions ... ok
+2025-08-17 17:59:56,687 - kivy - WARNING - logger.py:390 - stderr: test_pomodoro_timer_initialization (test_study_tracker.TestStudyTrackerCore.test_pomodoro_timer_initialization)
+2025-08-17 17:59:56,688 - kivy - WARNING - logger.py:390 - stderr: Test Pomodoro timer initialization ... ok
+2025-08-17 17:59:56,688 - kivy - WARNING - logger.py:390 - stderr: test_pomodoro_timer_session_completion (test_study_tracker.TestStudyTrackerCore.test_pomodoro_timer_session_completion)
+2025-08-17 17:59:56,688 - kivy - WARNING - logger.py:390 - stderr: Test Pomodoro session completion logic ... FAIL
+2025-08-17 17:59:56,688 - kivy - WARNING - logger.py:390 - stderr: test_study_goal_creation (test_study_tracker.TestStudyTrackerCore.test_study_goal_creation)
+2025-08-17 17:59:56,689 - kivy - WARNING - logger.py:390 - stderr: Test StudyGoal creation and serialization ... ok
+2025-08-17 17:59:56,689 - kivy - WARNING - logger.py:390 - stderr: test_study_goal_serialization (test_study_tracker.TestStudyTrackerCore.test_study_goal_serialization)
+2025-08-17 17:59:56,689 - kivy - WARNING - logger.py:390 - stderr: Test StudyGoal serialization and deserialization ... ok
+2025-08-17 17:59:56,689 - kivy - WARNING - logger.py:390 - stderr: test_study_stats_daily (test_study_tracker.TestStudyTrackerCore.test_study_stats_daily)
+2025-08-17 17:59:56,690 - kivy - WARNING - logger.py:390 - stderr: Test daily statistics calculation ... ok
+2025-08-17 17:59:56,690 - kivy - WARNING - logger.py:390 - stderr: test_study_stats_streak (test_study_tracker.TestStudyTrackerCore.test_study_stats_streak)
+2025-08-17 17:59:56,690 - kivy - WARNING - logger.py:390 - stderr: Test study streak calculation ... ok
+2025-08-17 17:59:56,690 - kivy - WARNING - logger.py:390 - stderr: test_study_stats_subject_progress (test_study_tracker.TestStudyTrackerCore.test_study_stats_subject_progress)
+2025-08-17 17:59:56,690 - kivy - WARNING - logger.py:390 - stderr: Test subject-specific progress calculation ... ok
+2025-08-17 17:59:56,690 - kivy - WARNING - logger.py:390 - stderr: test_study_stats_weekly (test_study_tracker.TestStudyTrackerCore.test_study_stats_weekly)
+2025-08-17 17:59:56,691 - kivy - WARNING - logger.py:390 - stderr: Test weekly statistics calculation ... ok
+2025-08-17 17:59:56,691 - kivy - WARNING - logger.py:390 - stderr: 
+2025-08-17 17:59:56,691 - kivy - WARNING - logger.py:390 - stderr: ======================================================================
+2025-08-17 17:59:56,691 - kivy - WARNING - logger.py:390 - stderr: FAIL: test_pomodoro_timer_session_completion (test_study_tracker.TestStudyTrackerCore.test_pomodoro_timer_session_completion)
+2025-08-17 17:59:56,691 - kivy - WARNING - logger.py:390 - stderr: Test Pomodoro session completion logic
+2025-08-17 17:59:56,691 - kivy - WARNING - logger.py:390 - stderr: ----------------------------------------------------------------------
+2025-08-17 17:59:56,691 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 17:59:56,691 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_study_tracker.py", line 88, in test_pomodoro_timer_session_completion
+2025-08-17 17:59:56,691 - kivy - WARNING - logger.py:390 - stderr:     self.assertEqual(timer.current_time, timer.long_break_duration)
+2025-08-17 17:59:56,691 - kivy - WARNING - logger.py:390 - stderr:     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-17 17:59:56,691 - kivy - WARNING - logger.py:390 - stderr: AssertionError: 300 != 900
+2025-08-17 17:59:56,692 - kivy - WARNING - logger.py:390 - stderr: 
+2025-08-17 17:59:56,692 - kivy - WARNING - logger.py:390 - stderr: ----------------------------------------------------------------------
+2025-08-17 17:59:56,692 - kivy - WARNING - logger.py:390 - stderr: Ran 21 tests in 0.024s
+2025-08-17 17:59:56,692 - kivy - WARNING - logger.py:390 - stderr: 
+2025-08-17 17:59:56,692 - kivy - WARNING - logger.py:390 - stderr: FAILED (failures=1)
+2025-08-17 18:00:10,530 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 18:00:10,530 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 18:26:47,509 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 18:26:47,511 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 18:26:47,515 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 18:26:47,515 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_dashboard.py", line 25, in <module>
+2025-08-17 18:26:47,516 - kivy - WARNING - logger.py:390 - stderr:     from modules.dashboard import DashboardModule
+2025-08-17 18:26:47,516 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/__init__.py", line 3, in <module>
+2025-08-17 18:26:47,516 - kivy - WARNING - logger.py:390 - stderr:     from .task_manager import TaskManager
+2025-08-17 18:26:47,516 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/task_manager.py", line 25, in <module>
+2025-08-17 18:26:47,516 - kivy - WARNING - logger.py:390 - stderr:     from ..core.base_module import BaseModule
+2025-08-17 18:26:47,516 - kivy - WARNING - logger.py:390 - stderr: ImportError: attempted relative import beyond top-level package
+2025-08-17 18:27:11,506 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 18:27:11,506 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 18:27:11,510 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 18:27:11,510 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_dashboard_simple.py", line 27, in test_dashboard_import
+2025-08-17 18:27:11,510 - kivy - WARNING - logger.py:390 - stderr:     from modules.dashboard import DashboardModule
+2025-08-17 18:27:11,510 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/__init__.py", line 3, in <module>
+2025-08-17 18:27:11,510 - kivy - WARNING - logger.py:390 - stderr:     from .task_manager import TaskManager
+2025-08-17 18:27:11,510 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/task_manager.py", line 25, in <module>
+2025-08-17 18:27:11,510 - kivy - WARNING - logger.py:390 - stderr:     from ..core.base_module import BaseModule
+2025-08-17 18:27:11,510 - kivy - WARNING - logger.py:390 - stderr: ImportError: attempted relative import beyond top-level package
+2025-08-17 18:27:11,511 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 18:27:11,511 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_dashboard_simple.py", line 55, in test_dashboard_initialization
+2025-08-17 18:27:11,511 - kivy - WARNING - logger.py:390 - stderr:     from modules.dashboard import DashboardModule
+2025-08-17 18:27:11,511 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/__init__.py", line 3, in <module>
+2025-08-17 18:27:11,511 - kivy - WARNING - logger.py:390 - stderr:     from .task_manager import TaskManager
+2025-08-17 18:27:11,511 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/task_manager.py", line 25, in <module>
+2025-08-17 18:27:11,511 - kivy - WARNING - logger.py:390 - stderr:     from ..core.base_module import BaseModule
+2025-08-17 18:27:11,511 - kivy - WARNING - logger.py:390 - stderr: ImportError: attempted relative import beyond top-level package
+2025-08-17 18:27:31,288 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 18:27:31,289 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 18:27:31,292 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 18:27:31,293 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_dashboard_simple.py", line 27, in test_dashboard_import
+2025-08-17 18:27:31,293 - kivy - WARNING - logger.py:390 - stderr:     from modules.dashboard import DashboardModule
+2025-08-17 18:27:31,293 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/__init__.py", line 3, in <module>
+2025-08-17 18:27:31,293 - kivy - WARNING - logger.py:390 - stderr:     from .task_manager import TaskManager
+2025-08-17 18:27:31,293 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/task_manager.py", line 25, in <module>
+2025-08-17 18:27:31,293 - kivy - WARNING - logger.py:390 - stderr:     from ..core.base_module import BaseModule
+2025-08-17 18:27:31,293 - kivy - WARNING - logger.py:390 - stderr: ImportError: attempted relative import beyond top-level package
+2025-08-17 18:27:31,293 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 18:27:31,293 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_dashboard_simple.py", line 55, in test_dashboard_initialization
+2025-08-17 18:27:31,293 - kivy - WARNING - logger.py:390 - stderr:     from modules.dashboard import DashboardModule
+2025-08-17 18:27:31,293 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/__init__.py", line 3, in <module>
+2025-08-17 18:27:31,293 - kivy - WARNING - logger.py:390 - stderr:     from .task_manager import TaskManager
+2025-08-17 18:27:31,293 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/task_manager.py", line 25, in <module>
+2025-08-17 18:27:31,293 - kivy - WARNING - logger.py:390 - stderr:     from ..core.base_module import BaseModule
+2025-08-17 18:27:31,293 - kivy - WARNING - logger.py:390 - stderr: ImportError: attempted relative import beyond top-level package
+2025-08-17 18:27:57,849 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 18:27:57,850 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 18:27:57,854 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 18:27:57,854 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_dashboard_simple.py", line 27, in test_dashboard_import
+2025-08-17 18:27:57,854 - kivy - WARNING - logger.py:390 - stderr:     from modules.dashboard import DashboardModule
+2025-08-17 18:27:57,854 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/__init__.py", line 3, in <module>
+2025-08-17 18:27:57,854 - kivy - WARNING - logger.py:390 - stderr:     from .task_manager import TaskManager
+2025-08-17 18:27:57,854 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/task_manager.py", line 25, in <module>
+2025-08-17 18:27:57,854 - kivy - WARNING - logger.py:390 - stderr:     from ..core.base_module import BaseModule
+2025-08-17 18:27:57,854 - kivy - WARNING - logger.py:390 - stderr: ImportError: attempted relative import beyond top-level package
+2025-08-17 18:27:57,855 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 18:27:57,855 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_dashboard_simple.py", line 55, in test_dashboard_initialization
+2025-08-17 18:27:57,855 - kivy - WARNING - logger.py:390 - stderr:     from modules.dashboard import DashboardModule
+2025-08-17 18:27:57,855 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/__init__.py", line 3, in <module>
+2025-08-17 18:27:57,855 - kivy - WARNING - logger.py:390 - stderr:     from .task_manager import TaskManager
+2025-08-17 18:27:57,855 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/task_manager.py", line 25, in <module>
+2025-08-17 18:27:57,855 - kivy - WARNING - logger.py:390 - stderr:     from ..core.base_module import BaseModule
+2025-08-17 18:27:57,855 - kivy - WARNING - logger.py:390 - stderr: ImportError: attempted relative import beyond top-level package
+2025-08-17 18:30:18,400 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 18:30:18,404 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 18:30:19,815 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 18:30:19,819 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_dashboard_simple.py", line 31, in test_dashboard_import
+2025-08-17 18:30:19,819 - kivy - WARNING - logger.py:390 - stderr:     dashboard = DashboardModule()
+2025-08-17 18:30:19,819 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/dashboard.py", line 603, in __init__
+2025-08-17 18:30:19,819 - kivy - WARNING - logger.py:390 - stderr:     super().__init__(
+2025-08-17 18:30:19,819 - kivy - WARNING - logger.py:390 - stderr:     ~~~~~~~~~~~~~~~~^
+2025-08-17 18:30:19,819 - kivy - WARNING - logger.py:390 - stderr:         module_id="dashboard",
+2025-08-17 18:30:19,819 - kivy - WARNING - logger.py:390 - stderr:         ^^^^^^^^^^^^^^^^^^^^^^
+2025-08-17 18:30:19,819 - kivy - WARNING - logger.py:390 - stderr:     ...<2 lines>...
+2025-08-17 18:30:19,819 - kivy - WARNING - logger.py:390 - stderr:         icon="🏠"
+2025-08-17 18:30:19,819 - kivy - WARNING - logger.py:390 - stderr:         ^^^^^^^^^
+2025-08-17 18:30:19,819 - kivy - WARNING - logger.py:390 - stderr:     )
+2025-08-17 18:30:19,819 - kivy - WARNING - logger.py:390 - stderr:     ^
+2025-08-17 18:30:19,819 - kivy - WARNING - logger.py:390 - stderr: TypeError: BaseModule.__init__() got an unexpected keyword argument 'description'
+2025-08-17 18:30:19,820 - core.config_manager - INFO - config_manager.py:30 - Configuration loaded successfully
+2025-08-17 18:30:19,820 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 18:30:19,820 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_dashboard_simple.py", line 62, in test_dashboard_initialization
+2025-08-17 18:30:19,820 - kivy - WARNING - logger.py:390 - stderr:     dashboard = DashboardModule()
+2025-08-17 18:30:19,821 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/dashboard.py", line 603, in __init__
+2025-08-17 18:30:19,821 - kivy - WARNING - logger.py:390 - stderr:     super().__init__(
+2025-08-17 18:30:19,821 - kivy - WARNING - logger.py:390 - stderr:     ~~~~~~~~~~~~~~~~^
+2025-08-17 18:30:19,821 - kivy - WARNING - logger.py:390 - stderr:         module_id="dashboard",
+2025-08-17 18:30:19,821 - kivy - WARNING - logger.py:390 - stderr:         ^^^^^^^^^^^^^^^^^^^^^^
+2025-08-17 18:30:19,821 - kivy - WARNING - logger.py:390 - stderr:     ...<2 lines>...
+2025-08-17 18:30:19,821 - kivy - WARNING - logger.py:390 - stderr:         icon="🏠"
+2025-08-17 18:30:19,821 - kivy - WARNING - logger.py:390 - stderr:         ^^^^^^^^^
+2025-08-17 18:30:19,821 - kivy - WARNING - logger.py:390 - stderr:     )
+2025-08-17 18:30:19,821 - kivy - WARNING - logger.py:390 - stderr:     ^
+2025-08-17 18:30:19,821 - kivy - WARNING - logger.py:390 - stderr: TypeError: BaseModule.__init__() got an unexpected keyword argument 'description'
+2025-08-17 18:30:41,907 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 18:30:41,907 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 18:30:43,107 - core.config_manager - INFO - config_manager.py:30 - Configuration loaded successfully
+2025-08-17 18:30:43,107 - modules.dashboard - INFO - dashboard.py:623 - Initializing Dashboard module
+2025-08-17 18:30:43,129 - modules.dashboard - INFO - dashboard.py:631 - Dashboard module initialized successfully
+2025-08-17 18:31:14,074 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 18:31:14,075 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 18:31:15,323 - core.config_manager - INFO - config_manager.py:30 - Configuration loaded successfully
+2025-08-17 18:31:15,325 - modules.dashboard - INFO - dashboard.py:623 - Initializing Dashboard module
+2025-08-17 18:31:15,345 - modules.dashboard - INFO - dashboard.py:631 - Dashboard module initialized successfully
+2025-08-17 18:31:15,345 - modules.dashboard - INFO - dashboard.py:623 - Initializing Dashboard module
+2025-08-17 18:31:15,353 - modules.dashboard - INFO - dashboard.py:631 - Dashboard module initialized successfully
+2025-08-17 18:31:15,353 - core.screen_manager - INFO - screen_manager.py:65 - Module registered successfully: dashboard
+2025-08-17 18:31:15,353 - modules.dashboard - DEBUG - dashboard.py:1040 - Dashboard module deactivated
+2025-08-17 18:31:15,354 - modules.dashboard - DEBUG - dashboard.py:1034 - Dashboard module activated
+2025-08-17 18:31:15,354 - core.screen_manager - DEBUG - screen_manager.py:157 - Navigated to module: dashboard
+2025-08-17 18:31:15,354 - modules.dashboard - INFO - dashboard.py:1058 - Cleaning up Dashboard module
+2025-08-17 18:31:15,354 - modules.dashboard - DEBUG - base_module.py:91 - Module dashboard cleaned up
+2025-08-17 18:31:58,504 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 18:31:58,508 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 20:50:43,753 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 20:50:43,756 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 20:50:43,759 - core.error_handler - WARNING - error_handler.py:292 - Error in test_context: Test error message (Type: module, Module: test_module)
+2025-08-17 20:50:43,759 - core.error_handler - INFO - error_handler.py:435 - Attempting to restart module: test_module
+2025-08-17 20:50:45,822 - core.module_recovery_manager - INFO - module_recovery_manager.py:72 - Registered module healthy_test for recovery management
+2025-08-17 20:50:45,823 - core.module_recovery_manager - INFO - module_recovery_manager.py:72 - Registered module failing_test for recovery management
+2025-08-17 20:50:45,823 - core.module_recovery_manager - INFO - module_recovery_manager.py:113 - Restarting module failing_test
+2025-08-17 20:50:45,823 - stosos.modules.failing_test - INFO - base_module.py:99 - Restarting module failing_test
+2025-08-17 20:50:45,823 - stosos.modules.failing_test - ERROR - base_module.py:117 - Error during module restart: Test module failing_test initialization failed
+2025-08-17 20:50:45,824 - core.error_handler - WARNING - error_handler.py:292 - Error in failing_test:module_restart: Test module failing_test initialization failed (Type: module, Module: failing_test)
+2025-08-17 20:50:45,824 - core.error_handler - INFO - error_handler.py:435 - Attempting to restart module: failing_test
+2025-08-17 20:50:45,824 - core.module_recovery_manager - ERROR - module_recovery_manager.py:138 - Module failing_test restart failed
+2025-08-17 20:50:45,824 - core.module_recovery_manager - INFO - module_recovery_manager.py:274 - Fallback mode enabled for module failing_test
+2025-08-17 20:50:45,824 - core.module_recovery_manager - INFO - module_recovery_manager.py:88 - Unregistered module healthy_test
+2025-08-17 20:50:45,824 - core.module_recovery_manager - INFO - module_recovery_manager.py:88 - Unregistered module failing_test
+2025-08-17 20:50:45,824 - core.module_recovery_manager - INFO - module_recovery_manager.py:72 - Registered module integration_test for recovery management
+2025-08-17 20:50:45,824 - core.error_handler - WARNING - error_handler.py:292 - Error in integration_test:initialization: Test module integration_test initialization failed (Type: module, Module: integration_test)
+2025-08-17 20:50:45,824 - core.error_handler - INFO - error_handler.py:435 - Attempting to restart module: integration_test
+2025-08-17 20:50:45,825 - core.module_recovery_manager - INFO - module_recovery_manager.py:88 - Unregistered module integration_test
+2025-08-17 20:50:45,825 - core.module_recovery_manager - INFO - module_recovery_manager.py:72 - Registered module degraded_test for recovery management
+2025-08-17 20:50:45,825 - core.error_handler - WARNING - error_handler.py:292 - Error in degraded_test:initialization_attempt_0: Test module degraded_test initialization failed (Type: module, Module: degraded_test)
+2025-08-17 20:50:45,825 - core.error_handler - INFO - error_handler.py:435 - Attempting to restart module: degraded_test
+2025-08-17 20:50:45,825 - core.error_handler - WARNING - error_handler.py:292 - Error in degraded_test:initialization_attempt_1: Test module degraded_test initialization failed (Type: module, Module: degraded_test)
+2025-08-17 20:50:45,825 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for module error
+2025-08-17 20:50:45,825 - core.error_handler - INFO - error_handler.py:256 - Attempting module error recovery for context: degraded_test:initialization_attempt_1
+2025-08-17 20:50:45,825 - core.error_handler - WARNING - error_handler.py:321 - Error pattern detected: module:Exception occurred 5 times
+2025-08-17 20:50:45,825 - core.module_recovery_manager - INFO - module_recovery_manager.py:348 - Automatically restarting failed module degraded_test
+2025-08-17 20:50:45,825 - core.module_recovery_manager - INFO - module_recovery_manager.py:113 - Restarting module degraded_test
+2025-08-17 20:50:45,825 - stosos.modules.degraded_test - INFO - base_module.py:99 - Restarting module degraded_test
+2025-08-17 20:50:45,825 - stosos.modules.degraded_test - INFO - base_module.py:108 - Module degraded_test restarted successfully
+2025-08-17 20:50:45,825 - core.module_recovery_manager - INFO - module_recovery_manager.py:128 - Module degraded_test restarted successfully
+2025-08-17 20:50:45,825 - core.module_recovery_manager - INFO - module_recovery_manager.py:88 - Unregistered module degraded_test
+2025-08-17 20:50:45,825 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_test: Network error 0 (Type: network, Module: pattern_test_module)
+2025-08-17 20:50:45,825 - core.error_handler - INFO - error_handler.py:435 - Attempting to restart module: pattern_test_module
+2025-08-17 20:50:45,825 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_test: Network error 1 (Type: network, Module: pattern_test_module)
+2025-08-17 20:50:45,825 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for network error
+2025-08-17 20:50:45,825 - core.error_handler - INFO - error_handler.py:250 - Attempting network error recovery
+2025-08-17 20:50:45,826 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_test: Network error 2 (Type: network, Module: pattern_test_module)
+2025-08-17 20:50:45,826 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for network error
+2025-08-17 20:50:45,826 - core.error_handler - INFO - error_handler.py:250 - Attempting network error recovery
+2025-08-17 20:50:45,826 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_test: Network error 3 (Type: network, Module: pattern_test_module)
+2025-08-17 20:50:45,826 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for network error
+2025-08-17 20:50:45,826 - core.error_handler - INFO - error_handler.py:250 - Attempting network error recovery
+2025-08-17 20:50:45,826 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_test: Network error 4 (Type: network, Module: pattern_test_module)
+2025-08-17 20:50:45,826 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for network error
+2025-08-17 20:50:45,826 - core.error_handler - INFO - error_handler.py:250 - Attempting network error recovery
+2025-08-17 20:50:45,826 - core.error_handler - WARNING - error_handler.py:321 - Error pattern detected: network:ConnectionError occurred 5 times
+2025-08-17 20:50:45,826 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_test: Network error 5 (Type: network, Module: pattern_test_module)
+2025-08-17 20:50:45,826 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for network error
+2025-08-17 20:50:45,826 - core.error_handler - INFO - error_handler.py:250 - Attempting network error recovery
+2025-08-17 20:50:45,826 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_test: Network error 6 (Type: network, Module: pattern_test_module)
+2025-08-17 20:50:45,826 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for network error
+2025-08-17 20:50:45,826 - core.error_handler - INFO - error_handler.py:250 - Attempting network error recovery
+2025-08-17 20:50:45,826 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_test: Network error 7 (Type: network, Module: pattern_test_module)
+2025-08-17 20:50:45,826 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for network error
+2025-08-17 20:50:45,826 - core.error_handler - INFO - error_handler.py:250 - Attempting network error recovery
+2025-08-17 20:50:45,826 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_test: Network error 8 (Type: network, Module: pattern_test_module)
+2025-08-17 20:50:45,826 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for network error
+2025-08-17 20:50:45,826 - core.error_handler - INFO - error_handler.py:250 - Attempting network error recovery
+2025-08-17 20:50:45,826 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_test: Network error 9 (Type: network, Module: pattern_test_module)
+2025-08-17 20:50:45,826 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for network error
+2025-08-17 20:50:45,826 - core.error_handler - INFO - error_handler.py:250 - Attempting network error recovery
+2025-08-17 20:50:45,826 - core.error_handler - ERROR - error_handler.py:323 - Frequent error pattern: network:ConnectionError occurred 10 times
+2025-08-17 20:50:45,828 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_test: Network error 10 (Type: network, Module: pattern_test_module)
+2025-08-17 20:50:45,828 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for network error
+2025-08-17 20:50:45,828 - core.error_handler - INFO - error_handler.py:250 - Attempting network error recovery
+2025-08-17 20:50:45,828 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_test: Network error 11 (Type: network, Module: pattern_test_module)
+2025-08-17 20:50:45,828 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for network error
+2025-08-17 20:50:45,828 - core.error_handler - INFO - error_handler.py:250 - Attempting network error recovery
+2025-08-17 20:52:01,153 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 20:52:01,154 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 20:52:01,156 - core.error_handler - ERROR - error_handler.py:290 - Error in network_operation: Network connection failed (Type: network, Module: demo_network)
+2025-08-17 20:52:01,168 - core.error_handler - INFO - error_handler.py:435 - Attempting to restart module: demo_network
+2025-08-17 20:52:01,170 - core.error_handler - WARNING - error_handler.py:292 - Error in config_access: Access denied to configuration file (Type: permission, Module: demo_config)
+2025-08-17 20:52:01,170 - core.error_handler - INFO - error_handler.py:435 - Attempting to restart module: demo_config
+2025-08-17 20:52:01,170 - core.error_handler - CRITICAL - error_handler.py:288 - Error in memory_allocation: Insufficient memory for operation (Type: memory, Module: demo_memory)
+2025-08-17 20:52:01,171 - core.error_handler - INFO - error_handler.py:435 - Attempting to restart module: demo_memory
+2025-08-17 20:52:02,143 - core.error_handler - ERROR - error_handler.py:290 - Error in System Health Monitor: High memory usage: 85.2% (Type: memory, Module: )
+2025-08-17 20:52:02,144 - core.notification_manager - ERROR - notification_manager.py:382 - Failed to display notification: Cannot create graphics instruction outside the main Kivy thread
+2025-08-17 20:52:02,145 - core.error_handler - WARNING - error_handler.py:402 - Unhandled recovery action: RecoveryAction.SYSTEM_RESTART
+2025-08-17 20:52:02,173 - core.module_recovery_manager - INFO - module_recovery_manager.py:72 - Registered module network_module for recovery management
+2025-08-17 20:52:02,173 - core.module_recovery_manager - INFO - module_recovery_manager.py:72 - Registered module permission_module for recovery management
+2025-08-17 20:52:02,174 - core.module_recovery_manager - INFO - module_recovery_manager.py:72 - Registered module persistent_module for recovery management
+2025-08-17 20:52:02,175 - core.error_handler - ERROR - error_handler.py:290 - Error in network_module:initialization: Failed to connect to external service (Type: network, Module: network_module)
+2025-08-17 20:52:02,182 - core.error_handler - INFO - error_handler.py:435 - Attempting to restart module: network_module
+2025-08-17 20:52:02,183 - core.module_recovery_manager - INFO - module_recovery_manager.py:113 - Restarting module network_module
+2025-08-17 20:52:02,183 - stosos.modules.network_module - INFO - base_module.py:99 - Restarting module network_module
+2025-08-17 20:52:02,183 - stosos.modules.network_module - ERROR - base_module.py:117 - Error during module restart: Failed to connect to external service
+2025-08-17 20:52:02,185 - core.error_handler - ERROR - error_handler.py:290 - Error in network_module:module_restart: Failed to connect to external service (Type: network, Module: network_module)
+2025-08-17 20:52:02,185 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for network error
+2025-08-17 20:52:02,185 - core.error_handler - INFO - error_handler.py:250 - Attempting network error recovery
+2025-08-17 20:52:02,186 - core.module_recovery_manager - ERROR - module_recovery_manager.py:138 - Module network_module restart failed
+2025-08-17 20:52:02,187 - core.error_handler - WARNING - error_handler.py:292 - Error in persistent_module:initialization: Persistent failure - cannot initialize (Type: module, Module: persistent_module)
+2025-08-17 20:52:02,187 - core.error_handler - INFO - error_handler.py:435 - Attempting to restart module: persistent_module
+2025-08-17 20:52:02,187 - core.module_recovery_manager - INFO - module_recovery_manager.py:113 - Restarting module persistent_module
+2025-08-17 20:52:02,187 - stosos.modules.persistent_module - INFO - base_module.py:99 - Restarting module persistent_module
+2025-08-17 20:52:02,187 - stosos.modules.persistent_module - ERROR - base_module.py:117 - Error during module restart: Persistent failure - cannot initialize
+2025-08-17 20:52:02,188 - core.error_handler - WARNING - error_handler.py:292 - Error in persistent_module:module_restart: Persistent failure - cannot initialize (Type: module, Module: persistent_module)
+2025-08-17 20:52:02,188 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for module error
+2025-08-17 20:52:02,188 - core.error_handler - INFO - error_handler.py:256 - Attempting module error recovery for context: persistent_module:module_restart
+2025-08-17 20:52:02,188 - core.module_recovery_manager - ERROR - module_recovery_manager.py:138 - Module persistent_module restart failed
+2025-08-17 20:52:02,188 - core.module_recovery_manager - INFO - module_recovery_manager.py:113 - Restarting module persistent_module
+2025-08-17 20:52:02,189 - stosos.modules.persistent_module - INFO - base_module.py:99 - Restarting module persistent_module
+2025-08-17 20:52:02,189 - stosos.modules.persistent_module - ERROR - base_module.py:117 - Error during module restart: Persistent failure - cannot initialize
+2025-08-17 20:52:02,189 - core.error_handler - WARNING - error_handler.py:292 - Error in persistent_module:module_restart: Persistent failure - cannot initialize (Type: module, Module: persistent_module)
+2025-08-17 20:52:02,189 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for module error
+2025-08-17 20:52:02,189 - core.error_handler - INFO - error_handler.py:256 - Attempting module error recovery for context: persistent_module:module_restart
+2025-08-17 20:52:02,189 - core.module_recovery_manager - ERROR - module_recovery_manager.py:138 - Module persistent_module restart failed
+2025-08-17 20:52:02,189 - core.module_recovery_manager - INFO - module_recovery_manager.py:113 - Restarting module persistent_module
+2025-08-17 20:52:02,189 - stosos.modules.persistent_module - INFO - base_module.py:99 - Restarting module persistent_module
+2025-08-17 20:52:02,189 - stosos.modules.persistent_module - ERROR - base_module.py:117 - Error during module restart: Persistent failure - cannot initialize
+2025-08-17 20:52:02,190 - core.error_handler - WARNING - error_handler.py:292 - Error in persistent_module:module_restart: Persistent failure - cannot initialize (Type: module, Module: persistent_module)
+2025-08-17 20:52:02,190 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for module error
+2025-08-17 20:52:02,190 - core.error_handler - INFO - error_handler.py:256 - Attempting module error recovery for context: persistent_module:module_restart
+2025-08-17 20:52:02,190 - core.module_recovery_manager - ERROR - module_recovery_manager.py:138 - Module persistent_module restart failed
+2025-08-17 20:52:02,190 - core.module_recovery_manager - INFO - module_recovery_manager.py:274 - Fallback mode enabled for module persistent_module
+2025-08-17 20:52:02,190 - core.module_recovery_manager - INFO - module_recovery_manager.py:274 - Fallback mode enabled for module persistent_module
+2025-08-17 20:52:02,190 - core.module_recovery_manager - INFO - module_recovery_manager.py:88 - Unregistered module network_module
+2025-08-17 20:52:02,190 - core.module_recovery_manager - INFO - module_recovery_manager.py:88 - Unregistered module permission_module
+2025-08-17 20:52:02,190 - core.module_recovery_manager - INFO - module_recovery_manager.py:88 - Unregistered module persistent_module
+2025-08-17 20:52:05,254 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_demo: Operation timeout #1 (Type: timeout, Module: pattern_test_module)
+2025-08-17 20:52:05,254 - core.error_handler - INFO - error_handler.py:435 - Attempting to restart module: pattern_test_module
+2025-08-17 20:52:05,255 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_demo: Operation timeout #2 (Type: timeout, Module: pattern_test_module)
+2025-08-17 20:52:05,255 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_demo: Operation timeout #3 (Type: timeout, Module: pattern_test_module)
+2025-08-17 20:52:05,256 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_demo: Operation timeout #4 (Type: timeout, Module: pattern_test_module)
+2025-08-17 20:52:05,256 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_demo: Operation timeout #5 (Type: timeout, Module: pattern_test_module)
+2025-08-17 20:52:05,256 - core.error_handler - WARNING - error_handler.py:321 - Error pattern detected: timeout:TimeoutError occurred 5 times
+2025-08-17 20:52:05,257 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_demo: Operation timeout #6 (Type: timeout, Module: pattern_test_module)
+2025-08-17 20:52:05,257 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_demo: Operation timeout #7 (Type: timeout, Module: pattern_test_module)
+2025-08-17 20:52:05,257 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_demo: Operation timeout #8 (Type: timeout, Module: pattern_test_module)
+2025-08-17 20:52:05,258 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_demo: Operation timeout #9 (Type: timeout, Module: pattern_test_module)
+2025-08-17 20:52:05,258 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_demo: Operation timeout #10 (Type: timeout, Module: pattern_test_module)
+2025-08-17 20:52:05,258 - core.error_handler - ERROR - error_handler.py:323 - Frequent error pattern: timeout:TimeoutError occurred 10 times
+2025-08-17 20:52:05,259 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_demo: Operation timeout #11 (Type: timeout, Module: pattern_test_module)
+2025-08-17 20:52:05,259 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_demo: Operation timeout #12 (Type: timeout, Module: pattern_test_module)
+2025-08-17 20:52:05,259 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_demo: Operation timeout #13 (Type: timeout, Module: pattern_test_module)
+2025-08-17 20:52:05,260 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_demo: Operation timeout #14 (Type: timeout, Module: pattern_test_module)
+2025-08-17 20:52:05,260 - core.error_handler - WARNING - error_handler.py:292 - Error in pattern_demo: Operation timeout #15 (Type: timeout, Module: pattern_test_module)
+2025-08-17 20:52:07,285 - core.module_recovery_manager - INFO - module_recovery_manager.py:72 - Registered module stressed_module for recovery management
+2025-08-17 20:52:07,287 - core.error_handler - WARNING - error_handler.py:292 - Error in stressed_module:stress_test_0: Persistent failure - cannot initialize (Type: module, Module: stressed_module)
+2025-08-17 20:52:07,287 - core.error_handler - INFO - error_handler.py:435 - Attempting to restart module: stressed_module
+2025-08-17 20:52:07,291 - core.error_handler - WARNING - error_handler.py:321 - Error pattern detected: module:Exception occurred 5 times
+2025-08-17 20:52:07,293 - core.error_handler - WARNING - error_handler.py:292 - Error in stressed_module:stress_test_1: Persistent failure - cannot initialize (Type: module, Module: stressed_module)
+2025-08-17 20:52:07,293 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for module error
+2025-08-17 20:52:07,293 - core.error_handler - INFO - error_handler.py:256 - Attempting module error recovery for context: stressed_module:stress_test_1
+2025-08-17 20:52:07,293 - core.module_recovery_manager - INFO - module_recovery_manager.py:348 - Automatically restarting failed module stressed_module
+2025-08-17 20:52:07,293 - core.module_recovery_manager - INFO - module_recovery_manager.py:113 - Restarting module stressed_module
+2025-08-17 20:52:07,293 - stosos.modules.stressed_module - INFO - base_module.py:99 - Restarting module stressed_module
+2025-08-17 20:52:07,293 - stosos.modules.stressed_module - ERROR - base_module.py:117 - Error during module restart: Persistent failure - cannot initialize
+2025-08-17 20:52:07,294 - core.error_handler - WARNING - error_handler.py:292 - Error in stressed_module:module_restart: Persistent failure - cannot initialize (Type: module, Module: stressed_module)
+2025-08-17 20:52:07,294 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for module error
+2025-08-17 20:52:07,294 - core.error_handler - INFO - error_handler.py:256 - Attempting module error recovery for context: stressed_module:module_restart
+2025-08-17 20:52:07,294 - core.module_recovery_manager - ERROR - module_recovery_manager.py:138 - Module stressed_module restart failed
+2025-08-17 20:52:07,295 - core.error_handler - WARNING - error_handler.py:292 - Error in stressed_module:stress_test_2: Persistent failure - cannot initialize (Type: module, Module: stressed_module)
+2025-08-17 20:52:07,295 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for module error
+2025-08-17 20:52:07,295 - core.error_handler - INFO - error_handler.py:256 - Attempting module error recovery for context: stressed_module:stress_test_2
+2025-08-17 20:52:07,296 - core.error_handler - WARNING - error_handler.py:292 - Error in stressed_module:stress_test_3: Persistent failure - cannot initialize (Type: module, Module: stressed_module)
+2025-08-17 20:52:07,296 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for module error
+2025-08-17 20:52:07,296 - core.error_handler - INFO - error_handler.py:256 - Attempting module error recovery for context: stressed_module:stress_test_3
+2025-08-17 20:52:07,296 - core.error_handler - WARNING - error_handler.py:292 - Error in stressed_module:stress_test_4: Persistent failure - cannot initialize (Type: module, Module: stressed_module)
+2025-08-17 20:52:07,296 - core.error_handler - INFO - error_handler.py:306 - Attempting recovery for module error
+2025-08-17 20:52:07,296 - core.error_handler - INFO - error_handler.py:256 - Attempting module error recovery for context: stressed_module:stress_test_4
+2025-08-17 20:52:07,296 - core.error_handler - ERROR - error_handler.py:323 - Frequent error pattern: module:Exception occurred 10 times
+2025-08-17 20:52:07,299 - core.module_recovery_manager - INFO - module_recovery_manager.py:274 - Fallback mode enabled for module stressed_module
+2025-08-17 20:52:07,299 - core.module_recovery_manager - INFO - module_recovery_manager.py:88 - Unregistered module stressed_module
