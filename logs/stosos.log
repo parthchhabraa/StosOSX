@@ -1030,3 +1030,147 @@ ValueError: Test error for framework testing
 2025-08-17 20:52:07,296 - core.error_handler - ERROR - error_handler.py:323 - Frequent error pattern: module:Exception occurred 10 times
 2025-08-17 20:52:07,299 - core.module_recovery_manager - INFO - module_recovery_manager.py:274 - Fallback mode enabled for module stressed_module
 2025-08-17 20:52:07,299 - core.module_recovery_manager - INFO - module_recovery_manager.py:88 - Unregistered module stressed_module
+2025-08-17 21:00:40,175 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 21:00:40,176 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 21:00:40,194 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 21:00:40,194 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_voice_assistant.py", line 22, in <module>
+2025-08-17 21:00:40,194 - kivy - WARNING - logger.py:390 - stderr:     from modules.voice_assistant import VoiceAssistantModule
+2025-08-17 21:00:40,194 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/voice_assistant.py", line 21, in <module>
+2025-08-17 21:00:40,195 - kivy - WARNING - logger.py:390 - stderr:     import speech_recognition as sr
+2025-08-17 21:00:40,195 - kivy - WARNING - logger.py:390 - stderr: ModuleNotFoundError: No module named 'speech_recognition'
+2025-08-17 21:00:47,798 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 21:00:47,799 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 21:00:47,811 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 21:00:47,811 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/verify_voice_assistant.py", line 71, in verify_voice_assistant_module
+2025-08-17 21:00:47,811 - kivy - WARNING - logger.py:390 - stderr:     from modules.voice_assistant import VoiceAssistantModule
+2025-08-17 21:00:47,811 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/voice_assistant.py", line 21, in <module>
+2025-08-17 21:00:47,811 - kivy - WARNING - logger.py:390 - stderr:     import speech_recognition as sr
+2025-08-17 21:00:47,811 - kivy - WARNING - logger.py:390 - stderr: ModuleNotFoundError: No module named 'speech_recognition'
+2025-08-17 21:00:47,978 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 21:00:47,978 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/verify_voice_assistant.py", line 139, in verify_voice_service
+2025-08-17 21:00:47,978 - kivy - WARNING - logger.py:390 - stderr:     from services.voice_service import VoiceService
+2025-08-17 21:00:47,978 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/services/voice_service.py", line 19, in <module>
+2025-08-17 21:00:47,978 - kivy - WARNING - logger.py:390 - stderr:     import speech_recognition as sr
+2025-08-17 21:00:47,978 - kivy - WARNING - logger.py:390 - stderr: ModuleNotFoundError: No module named 'speech_recognition'
+2025-08-17 21:00:47,982 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: task_create, Module: task_manager, Action: create
+2025-08-17 21:00:47,982 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: calendar_view, Module: calendar, Action: read
+2025-08-17 21:00:47,983 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: light_control, Module: smart_home, Action: control
+2025-08-17 21:00:47,983 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: music_play, Module: spotify_controller, Action: start
+2025-08-17 21:00:47,983 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: study_start, Module: study_tracker, Action: start
+2025-08-17 21:00:47,983 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: idea_save, Module: idea_board, Action: create
+2025-08-17 21:00:47,984 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 21:00:47,984 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/verify_voice_assistant.py", line 372, in verify_command_routing
+2025-08-17 21:00:47,984 - kivy - WARNING - logger.py:390 - stderr:     from modules.voice_assistant import VoiceAssistantModule
+2025-08-17 21:00:47,984 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/voice_assistant.py", line 21, in <module>
+2025-08-17 21:00:47,984 - kivy - WARNING - logger.py:390 - stderr:     import speech_recognition as sr
+2025-08-17 21:00:47,984 - kivy - WARNING - logger.py:390 - stderr: ModuleNotFoundError: No module named 'speech_recognition'
+2025-08-17 21:10:14,464 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 21:10:14,465 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 21:10:14,549 - stosos.services.voice - INFO - voice_service.py:192 - Added wake word pattern: stos
+2025-08-17 21:10:14,549 - stosos.services.voice - INFO - voice_service.py:192 - Added wake word pattern: hey stos
+2025-08-17 21:10:14,549 - stosos.services.voice - INFO - voice_service.py:300 - Wake word sensitivity adjusted to 0.5
+2025-08-17 21:10:14,551 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: task_create, Module: task_manager, Action: create
+2025-08-17 21:10:14,551 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: calendar_view, Module: calendar, Action: read
+2025-08-17 21:10:14,551 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: light_control, Module: smart_home, Action: control
+2025-08-17 21:10:14,551 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: music_play, Module: spotify_controller, Action: start
+2025-08-17 21:10:14,551 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: study_start, Module: study_tracker, Action: start
+2025-08-17 21:10:14,551 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: idea_save, Module: idea_board, Action: create
+2025-08-17 21:10:16,112 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: task_create, Module: task_manager, Action: create
+2025-08-17 21:10:23,782 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 21:10:23,782 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 21:10:31,400 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: task_create, Module: task_manager, Action: create
+2025-08-17 21:10:31,401 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: task_list, Module: task_manager, Action: read
+2025-08-17 21:10:31,402 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: calendar_create, Module: calendar, Action: create
+2025-08-17 21:10:31,402 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: light_control, Module: smart_home, Action: control
+2025-08-17 21:10:31,402 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: music_play, Module: spotify_controller, Action: start
+2025-08-17 21:10:31,403 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: study_start, Module: study_tracker, Action: start
+2025-08-17 21:10:31,403 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: idea_save, Module: task_manager, Action: create
+2025-08-17 21:10:31,403 - stosos.core.voice_parser - INFO - voice_command_parser.py:205 - Parsed command - Intent: temperature_control, Module: smart_home, Action: update
+2025-08-17 21:25:12,243 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 21:25:12,245 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 21:26:14,421 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 21:26:14,423 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 21:26:14,423 - core.config_manager - INFO - config_manager.py:30 - Configuration loaded successfully
+2025-08-17 21:26:25,599 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 21:26:25,600 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 21:26:25,652 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 21:26:25,652 - kivy - WARNING - logger.py:390 - stderr:   File "<string>", line 6, in <module>
+2025-08-17 21:26:25,652 - kivy - WARNING - logger.py:390 - stderr:     from modules.spotify_controller import SpotifyControllerModule
+2025-08-17 21:26:25,652 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/spotify_controller.py", line 550
+2025-08-17 21:26:25,652 - kivy - WARNING - logger.py:390 - stderr:     def get_screen(self) -> Screen:
+2025-08-17 21:26:25,652 - kivy - WARNING - logger.py:390 - stderr:                                    ^
+2025-08-17 21:26:25,652 - kivy - WARNING - logger.py:390 - stderr: IndentationError: unindent does not match any outer indentation level
+2025-08-17 21:27:38,054 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 21:27:38,055 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 21:27:38,205 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 21:27:38,206 - kivy - WARNING - logger.py:390 - stderr:   File "<string>", line 6, in <module>
+2025-08-17 21:27:38,206 - kivy - WARNING - logger.py:390 - stderr:     from modules.spotify_controller import SpotifyControllerModule
+2025-08-17 21:27:38,206 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/spotify_controller.py", line 26, in <module>
+2025-08-17 21:27:38,206 - kivy - WARNING - logger.py:390 - stderr:     import spotipy
+2025-08-17 21:27:38,206 - kivy - WARNING - logger.py:390 - stderr: ModuleNotFoundError: No module named 'spotipy'
+2025-08-17 21:28:08,828 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 21:28:08,829 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 21:28:08,953 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 21:28:08,954 - kivy - WARNING - logger.py:390 - stderr:   File "<string>", line 6, in <module>
+2025-08-17 21:28:08,954 - kivy - WARNING - logger.py:390 - stderr:     from modules.spotify_controller import SpotifyControllerModule
+2025-08-17 21:28:08,954 - kivy - WARNING - logger.py:390 - stderr: ImportError: cannot import name 'SpotifyControllerModule' from 'modules.spotify_controller' (/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/spotify_controller.py)
+2025-08-17 21:28:27,460 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 21:28:27,461 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 21:28:58,037 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 21:28:58,038 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 21:28:58,046 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 21:28:58,046 - kivy - WARNING - logger.py:390 - stderr:   File "<string>", line 6, in <module>
+2025-08-17 21:28:58,047 - kivy - WARNING - logger.py:390 - stderr:     from main import StosOSApp
+2025-08-17 21:28:58,047 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/main.py", line 27, in <module>
+2025-08-17 21:28:58,047 - kivy - WARNING - logger.py:390 - stderr:     from core.system_manager import SystemManager
+2025-08-17 21:28:58,047 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/core/system_manager.py", line 17, in <module>
+2025-08-17 21:28:58,047 - kivy - WARNING - logger.py:390 - stderr:     from .performance_manager import PerformanceManager
+2025-08-17 21:28:58,047 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/core/performance_manager.py", line 21, in <module>
+2025-08-17 21:28:58,047 - kivy - WARNING - logger.py:390 - stderr:     from .logger import Logger
+2025-08-17 21:28:58,047 - kivy - WARNING - logger.py:390 - stderr: ImportError: cannot import name 'Logger' from 'core.logger' (/Users/parthchhabra/Desktop/StosOSRpi/stosos/core/logger.py). Did you mean: 'logger'?
+2025-08-17 21:30:02,792 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 21:30:02,793 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 21:30:02,794 - test - INFO - <string>:7 - Test log message
+2025-08-17 21:30:34,033 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 21:30:34,033 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 21:30:45,072 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 21:30:45,072 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 21:30:45,075 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 21:30:45,076 - kivy - WARNING - logger.py:390 - stderr:   File "<string>", line 8, in <module>
+2025-08-17 21:30:45,076 - kivy - WARNING - logger.py:390 - stderr:     import main
+2025-08-17 21:30:45,076 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/main.py", line 27, in <module>
+2025-08-17 21:30:45,076 - kivy - WARNING - logger.py:390 - stderr:     from core.system_manager import SystemManager
+2025-08-17 21:30:45,076 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/core/system_manager.py", line 17, in <module>
+2025-08-17 21:30:45,076 - kivy - WARNING - logger.py:390 - stderr:     from .performance_manager import PerformanceManager
+2025-08-17 21:30:45,076 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/core/performance_manager.py", line 21, in <module>
+2025-08-17 21:30:45,076 - kivy - WARNING - logger.py:390 - stderr:     from .logger import Logger
+2025-08-17 21:30:45,076 - kivy - WARNING - logger.py:390 - stderr: ImportError: cannot import name 'Logger' from 'core.logger' (/Users/parthchhabra/Desktop/StosOSRpi/stosos/core/logger.py). Did you mean: 'logger'?
+2025-08-17 21:31:17,577 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 21:31:17,582 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 21:31:47,672 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 21:31:47,675 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 21:31:47,679 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 21:31:47,680 - kivy - WARNING - logger.py:390 - stderr:   File "<string>", line 3, in <module>
+2025-08-17 21:31:47,680 - kivy - WARNING - logger.py:390 - stderr:     from core.system_manager import SystemManager
+2025-08-17 21:31:47,680 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/core/system_manager.py", line 17, in <module>
+2025-08-17 21:31:47,680 - kivy - WARNING - logger.py:390 - stderr:     from .performance_manager import PerformanceManager
+2025-08-17 21:31:47,680 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/core/performance_manager.py", line 21, in <module>
+2025-08-17 21:31:47,680 - kivy - WARNING - logger.py:390 - stderr:     from .logger import Logger
+2025-08-17 21:31:47,680 - kivy - WARNING - logger.py:390 - stderr: ImportError: cannot import name 'Logger' from 'core.logger' (/Users/parthchhabra/Desktop/StosOSRpi/stosos/core/logger.py). Did you mean: 'logger'?
+2025-08-17 21:35:26,815 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 21:35:26,817 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 21:35:26,824 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 21:35:26,825 - kivy - WARNING - logger.py:390 - stderr:   File "<string>", line 3, in <module>
+2025-08-17 21:35:26,825 - kivy - WARNING - logger.py:390 - stderr:     from core.system_manager import SystemManager
+2025-08-17 21:35:26,825 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/core/system_manager.py", line 17, in <module>
+2025-08-17 21:35:26,825 - kivy - WARNING - logger.py:390 - stderr:     from .performance_manager import PerformanceManager
+2025-08-17 21:35:26,825 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/core/performance_manager.py", line 47, in <module>
+2025-08-17 21:35:26,825 - kivy - WARNING - logger.py:390 - stderr:     class ResourceCleanupManager:
+2025-08-17 21:35:26,825 - kivy - WARNING - logger.py:390 - stderr:     ...<97 lines>...
+2025-08-17 21:35:26,825 - kivy - WARNING - logger.py:390 - stderr:             gc.collect()
+2025-08-17 21:35:26,825 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/core/performance_manager.py", line 50, in ResourceCleanupManager
+2025-08-17 21:35:26,825 - kivy - WARNING - logger.py:390 - stderr:     def __init__(self, logger: Logger):
+2025-08-17 21:35:26,825 - kivy - WARNING - logger.py:390 - stderr:                                ^^^^^^
+2025-08-17 21:35:26,825 - kivy - WARNING - logger.py:390 - stderr: NameError: name 'Logger' is not defined
+2025-08-17 21:37:28,491 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 21:37:28,493 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized

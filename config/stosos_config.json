@@ -1,53 +1,87 @@
 {
-  "app": {
-    "name": "StosOS X",
-    "version": "1.0.0",
-    "debug": false
+  "system": {
+    "debug_mode": false,
+    "log_level": "INFO",
+    "auto_start_modules": [
+      "dashboard",
+      "calendar",
+      "tasks",
+      "smart_home"
+    ],
+    "theme": "dark",
+    "language": "en"
   },
   "display": {
     "brightness_levels": [
       20,
+      50,
       100
     ],
-    "idle_timeout_dim": 30,
-    "idle_timeout_sleep": 60
+    "idle_timeout_seconds": 30,
+    "sleep_timeout_seconds": 60,
+    "wake_on_touch": true
   },
-  "voice": {
-    "wake_word": "hey stosos",
-    "language": "en-US",
-    "voice_speed": 150
+  "audio": {
+    "input_device": "default",
+    "output_device": "default",
+    "volume": 70,
+    "voice_feedback": true
   },
-  "api_keys": {
-    "google_calendar": "",
-    "spotify_client_id": "",
-    "spotify_client_secret": "",
-    "openai_api_key": "",
-    "test_service": "test_api_key_123"
+  "google_calendar": {
+    "client_id": "810084908386-0amsmo2lc9qp3gg6fuscnjsq3m8k5ig7.apps.googleusercontent.com",
+    "client_secret": "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",
+    "redirect_uri": "http://localhost:8080/callback",
+    "scopes": [
+      "https://www.googleapis.com/auth/calendar"
+    ],
+    "enabled": true
+  },
+  "google_assistant": {
+    "credentials_file": "config/google_assistant_credentials.json",
+    "device_model_id": "stosos-device-model",
+    "device_id": "stosos-device-001",
+    "enabled": false
+  },
+  "spotify": {
+    "client_id": "515b520ddd7b4ed2a33fdd1091c9ef00",
+    "client_secret": "e24611ecfa1c4be2b28c1d59e40af0b8",
+    "redirect_uri": "http://127.0.0.1:8080/callback",
+    "scope": "user-read-playback-state user-modify-playback-state user-read-currently-playing playlist-read-private user-read-recently-played",
+    "enabled": true
+  },
+  "voice_assistant": {
+    "wake_word": "stos",
+    "confidence_threshold": 0.7,
+    "timeout_seconds": 5,
+    "enabled": true
   },
   "modules": {
     "calendar": {
-      "enabled": true
+      "enabled": true,
+      "default_view": "week"
     },
     "tasks": {
-      "enabled": true
+      "enabled": true,
+      "auto_save": true
+    },
+    "idea_board": {
+      "enabled": true,
+      "auto_backup": true
+    },
+    "study_tracker": {
+      "enabled": true,
+      "pomodoro_duration": 25
     },
     "smart_home": {
-      "enabled": true
+      "enabled": true,
+      "auto_discover": true
+    },
+    "spotify": {
+      "enabled": true,
+      "show_album_art": true
     },
     "voice_assistant": {
       "enabled": true
-    },
-    "idea_board": {
-      "enabled": true
-    },
-    "study_tracker": {
-      "enabled": true
-    },
-    "spotify": {
-      "enabled": true
     }
-  },
-  "test": {
-    "key": "test_value"
   }
 }

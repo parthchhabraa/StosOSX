@@ -32,8 +32,7 @@ class SystemManager:
         self.restart_requested = False
         
         # Initialize performance optimization components
-        from .logger import Logger
-        stosos_logger = Logger()
+        from .logger import stosos_logger
         self.performance_manager = PerformanceManager(stosos_logger)
         self.graphics_optimizer = GraphicsOptimizer(stosos_logger)
         self.resource_monitor = ResourceMonitor(stosos_logger)

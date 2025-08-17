@@ -18,7 +18,7 @@ import logging
 from pathlib import Path
 import json
 
-from .logger import Logger
+from .logger import stosos_logger
 
 
 @dataclass
@@ -47,7 +47,7 @@ class ModuleResourceUsage:
 class ResourceCleanupManager:
     """Manages cleanup of unused resources and modules"""
     
-    def __init__(self, logger: Logger):
+    def __init__(self, logger):
         self.logger = logger
         self._cleanup_callbacks: Dict[str, List[Callable]] = {}
         self._module_refs: Dict[str, weakref.ref] = {}
@@ -151,7 +151,7 @@ class ResourceCleanupManager:
 class LazyLoader:
     """Implements lazy loading for heavy modules and resources"""
     
-    def __init__(self, logger: Logger):
+    def __init__(self, logger):
         self.logger = logger
         self._loaded_modules: Dict[str, Any] = {}
         self._module_loaders: Dict[str, Callable] = {}
@@ -209,7 +209,7 @@ class LazyLoader:
 class PerformanceProfiler:
     """Profiles system performance and identifies bottlenecks"""
     
-    def __init__(self, logger: Logger):
+    def __init__(self, logger):
         self.logger = logger
         self._profiling_active = False
         self._profile_data: List[PerformanceMetrics] = []
@@ -307,7 +307,7 @@ class PerformanceProfiler:
 class PerformanceManager:
     """Main performance management system for StosOS"""
     
-    def __init__(self, logger: Logger):
+    def __init__(self, logger):
         self.logger = logger
         self.cleanup_manager = ResourceCleanupManager(logger)
         self.lazy_loader = LazyLoader(logger)

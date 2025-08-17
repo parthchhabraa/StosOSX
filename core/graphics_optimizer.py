@@ -63,7 +63,7 @@ except ImportError:
     Animation = MockAnimation
     Cache = MockCache
 
-from .logger import Logger
+from .logger import stosos_logger
 
 
 @dataclass
@@ -79,7 +79,7 @@ class RenderingStats:
 class FrameRateManager:
     """Manages frame rate and rendering performance"""
     
-    def __init__(self, logger: Logger, target_fps: float = 30.0):
+    def __init__(self, logger, target_fps: float = 30.0):
         self.logger = logger
         self.target_fps = target_fps
         self.target_frame_time = 1.0 / target_fps
@@ -183,7 +183,7 @@ class FrameRateManager:
 class AnimationOptimizer:
     """Optimizes animations for better performance"""
     
-    def __init__(self, logger: Logger, frame_manager: FrameRateManager):
+    def __init__(self, logger, frame_manager: FrameRateManager):
         self.logger = logger
         self.frame_manager = frame_manager
         
@@ -272,7 +272,7 @@ class AnimationOptimizer:
 class TextureManager:
     """Manages texture caching and optimization"""
     
-    def __init__(self, logger: Logger):
+    def __init__(self, logger):
         self.logger = logger
         
         # Configure Kivy cache for better performance
@@ -331,7 +331,7 @@ class TextureManager:
 class RenderingOptimizer:
     """Optimizes rendering operations"""
     
-    def __init__(self, logger: Logger):
+    def __init__(self, logger):
         self.logger = logger
         self._render_batches: List[Callable] = []
         self._batch_timer = None
@@ -370,7 +370,7 @@ class RenderingOptimizer:
 class GraphicsOptimizer:
     """Main graphics optimization system"""
     
-    def __init__(self, logger: Logger, target_fps: float = 30.0):
+    def __init__(self, logger, target_fps: float = 30.0):
         self.logger = logger
         
         self.frame_manager = FrameRateManager(logger, target_fps)

@@ -105,7 +105,7 @@ StosOS integrates with several external services to provide comprehensive functi
    - Description: "Personal desktop environment music control"
 
 2. **Configure App Settings**
-   - Add Redirect URI: `http://localhost:8080/callback`
+   - Add Redirect URI: `http://127.0.0.1:8080/callback`
    - Note down Client ID and Client Secret
 
 3. **Configure StosOS**
@@ -114,7 +114,7 @@ StosOS integrates with several external services to provide comprehensive functi
      "spotify": {
        "client_id": "your_spotify_client_id",
        "client_secret": "your_spotify_client_secret",
-       "redirect_uri": "http://localhost:8080/callback",
+       "redirect_uri": "http://127.0.0.1:8080/callback",
        "scope": "user-read-playback-state user-modify-playback-state user-read-currently-playing playlist-read-private",
        "enabled": true
      }
@@ -208,7 +208,7 @@ Here's a complete `stosos_config.json` file with all services configured:
   "spotify": {
     "client_id": "your_spotify_client_id",
     "client_secret": "your_spotify_client_secret",
-    "redirect_uri": "http://localhost:8080/callback",
+    "redirect_uri": "http://127.0.0.1:8080/callback",
     "scope": "user-read-playback-state user-modify-playback-state user-read-currently-playing playlist-read-private",
     "enabled": true,
     "default_device": "alexa_speaker"

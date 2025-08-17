@@ -237,7 +237,7 @@ class SpotifyController(BaseModule):
             
             client_id = spotify_config.get('client_id')
             client_secret = spotify_config.get('client_secret')
-            redirect_uri = spotify_config.get('redirect_uri', 'http://localhost:8080/callback')
+            redirect_uri = spotify_config.get('redirect_uri', 'http://127.0.0.1:8080/callback')
             
             if not client_id or not client_secret:
                 self.logger.error("Spotify credentials not configured")
@@ -545,9 +545,9 @@ class SpotifyController(BaseModule):
         content_layout.add_widget(self.library_scroll)
         
         panel.add_widget(content_layout)
-        return panel    
- 
-   def get_screen(self) -> Screen:
+        return panel
+    
+    def get_screen(self) -> Screen:
         """Get the main screen for this module"""
         return self.main_screen
     

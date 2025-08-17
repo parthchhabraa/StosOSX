@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import subprocess
 
-from .logger import Logger
+from .logger import stosos_logger
 from .performance_manager import PerformanceMetrics
 
 
@@ -52,7 +52,7 @@ class ProcessInfo:
 class AlertManager:
     """Manages system alerts and notifications"""
     
-    def __init__(self, logger: Logger):
+    def __init__(self, logger):
         self.logger = logger
         self._alert_callbacks: List[Callable[[str, str, str], None]] = []
         self._alert_history: List[Dict[str, Any]] = []
@@ -114,7 +114,7 @@ class AlertManager:
 class ProcessMonitor:
     """Monitors system processes"""
     
-    def __init__(self, logger: Logger):
+    def __init__(self, logger):
         self.logger = logger
         self._process_cache: Dict[int, ProcessInfo] = {}
         self._high_cpu_threshold = 20.0  # %
@@ -184,7 +184,7 @@ class ProcessMonitor:
 class DiskMonitor:
     """Monitors disk usage and cleanup"""
     
-    def __init__(self, logger: Logger):
+    def __init__(self, logger):
         self.logger = logger
         self._cleanup_paths = [
             '/tmp',
@@ -254,7 +254,7 @@ class DiskMonitor:
 class NetworkMonitor:
     """Monitors network usage"""
     
-    def __init__(self, logger: Logger):
+    def __init__(self, logger):
         self.logger = logger
         self._last_stats = None
         self._last_time = None
@@ -300,7 +300,7 @@ class NetworkMonitor:
 class ResourceMonitor:
     """Main resource monitoring system"""
     
-    def __init__(self, logger: Logger):
+    def __init__(self, logger):
         self.logger = logger
         self.alert_manager = AlertManager(logger)
         self.process_monitor = ProcessMonitor(logger)
