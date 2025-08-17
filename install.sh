@@ -13,7 +13,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Configuration
-STOSOS_USER="pi"
+STOSOS_USER="st6b"
 STOSOS_HOME="/home/$STOSOS_USER"
 STOSOS_DIR="$STOSOS_HOME/stosos"
 VENV_DIR="$STOSOS_DIR/venv"
@@ -207,8 +207,8 @@ setup_systemd_service() {
         cp "$STOSOS_DIR/stosos.service" "$STOSOS_HOME/.config/systemd/user/"
         
         # Update paths in service file
-        sed -i "s|/home/pi/stosos|$STOSOS_DIR|g" "$STOSOS_HOME/.config/systemd/user/stosos.service"
-        sed -i "s|User=pi|User=$STOSOS_USER|g" "$STOSOS_HOME/.config/systemd/user/stosos.service"
+        sed -i "s|/home/st6b/stosos|$STOSOS_DIR|g" "$STOSOS_HOME/.config/systemd/user/stosos.service"
+        sed -i "s|User=st6b|User=$STOSOS_USER|g" "$STOSOS_HOME/.config/systemd/user/stosos.service"
         
         # Reload systemd and enable service
         systemctl --user daemon-reload

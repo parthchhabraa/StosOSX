@@ -59,7 +59,7 @@ This guide will walk you through setting up StosOS on a Raspberry Pi 4 with a 7-
 1. **Clone StosOS Repository**
    ```bash
    cd /home/pi
-   git clone https://github.com/parthchhabraa/stosos.git
+   git clone https://github.com/your-username/stosos.git
    cd stosos
    ```
 
