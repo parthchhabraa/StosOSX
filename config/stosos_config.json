@@ -1,0 +1,53 @@
+{
+  "app": {
+    "name": "StosOS X",
+    "version": "1.0.0",
+    "debug": false
+  },
+  "display": {
+    "brightness_levels": [
+      20,
+      100
+    ],
+    "idle_timeout_dim": 30,
+    "idle_timeout_sleep": 60
+  },
+  "voice": {
+    "wake_word": "hey stosos",
+    "language": "en-US",
+    "voice_speed": 150
+  },
+  "api_keys": {
+    "google_calendar": "",
+    "spotify_client_id": "",
+    "spotify_client_secret": "",
+    "openai_api_key": "",
+    "test_service": "test_api_key_123"
+  },
+  "modules": {
+    "calendar": {
+      "enabled": true
+    },
+    "tasks": {
+      "enabled": true
+    },
+    "smart_home": {
+      "enabled": true
+    },
+    "voice_assistant": {
+      "enabled": true
+    },
+    "idea_board": {
+      "enabled": true
+    },
+    "study_tracker": {
+      "enabled": true
+    },
+    "spotify": {
+      "enabled": true
+    }
+  },
+  "test": {
+    "key": "test_value"
+  }
+}

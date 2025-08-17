@@ -1,0 +1,486 @@
+2025-08-17 16:17:35,446 - test - INFO - test_setup.py:64 - Test log message
+2025-08-17 16:17:51,477 - core.config_manager - INFO - config_manager.py:36 - No config file found, using defaults
+2025-08-17 16:17:51,478 - test - INFO - test_setup.py:65 - Test log message
+2025-08-17 16:22:58,159 - kivy - WARNING - config.py:766 - Config: Older configuration version detected (0 instead of 27)
+2025-08-17 16:22:58,159 - kivy - WARNING - config.py:769 - Config: Upgrading configuration in progress.
+2025-08-17 16:22:58,160 - kivy - INFO - __init__.py:512 - Kivy: v2.3.1
+2025-08-17 16:22:58,161 - kivy - INFO - __init__.py:513 - Kivy: Installed at "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kivy/__init__.py"
+2025-08-17 16:22:58,161 - kivy - INFO - __init__.py:514 - Python: v3.13.4 (v3.13.4:8a526ec7cbe, Jun  3 2025, 21:14:54) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-08-17 16:22:58,161 - kivy - INFO - __init__.py:515 - Python: Interpreter at "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3"
+2025-08-17 16:22:58,161 - kivy - INFO - logger.py:232 - Logger: Purge log fired. Processing...
+2025-08-17 16:22:58,162 - kivy - INFO - logger.py:249 - Logger: Purge finished!
+2025-08-17 16:22:58,350 - kivy - INFO - factory.py:186 - Factory: 195 symbols loaded
+2025-08-17 16:22:58,976 - kivy - INFO - __init__.py:145 - Image: Providers: img_tex, img_imageio, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+2025-08-17 16:22:59,212 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 16:22:59,212 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_framework.py", line 20, in <module>
+2025-08-17 16:22:59,212 - kivy - WARNING - logger.py:390 - stderr:     from core.screen_manager import StosOSScreenManager
+2025-08-17 16:22:59,212 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/core/screen_manager.py", line 12, in <module>
+2025-08-17 16:22:59,212 - kivy - WARNING - logger.py:390 - stderr:     from .base_module import BaseModule
+2025-08-17 16:22:59,212 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/core/base_module.py", line 9, in <module>
+2025-08-17 16:22:59,212 - kivy - WARNING - logger.py:390 - stderr:     from kivy.uix.screen import Screen
+2025-08-17 16:22:59,212 - kivy - WARNING - logger.py:390 - stderr: ModuleNotFoundError: No module named 'kivy.uix.screen'
+2025-08-17 16:23:28,285 - kivy - INFO - __init__.py:512 - Kivy: v2.3.1
+2025-08-17 16:23:28,285 - kivy - INFO - __init__.py:513 - Kivy: Installed at "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kivy/__init__.py"
+2025-08-17 16:23:28,286 - kivy - INFO - __init__.py:514 - Python: v3.13.4 (v3.13.4:8a526ec7cbe, Jun  3 2025, 21:14:54) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-08-17 16:23:28,286 - kivy - INFO - __init__.py:515 - Python: Interpreter at "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3"
+2025-08-17 16:23:28,286 - kivy - INFO - logger.py:232 - Logger: Purge log fired. Processing...
+2025-08-17 16:23:28,286 - kivy - INFO - logger.py:249 - Logger: Purge finished!
+2025-08-17 16:23:28,343 - kivy - INFO - factory.py:186 - Factory: 195 symbols loaded
+2025-08-17 16:23:28,403 - kivy - INFO - __init__.py:145 - Image: Providers: img_tex, img_imageio, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+2025-08-17 16:23:28,530 - kivy - INFO - __init__.py:67 - Text: Provider: sdl2
+2025-08-17 16:23:28,539 - core.config_manager - INFO - config_manager.py:36 - No config file found, using defaults
+2025-08-17 16:23:28,539 - core.config_manager - DEBUG - config_manager.py:109 - Config updated: test.value = test_data
+2025-08-17 16:23:28,539 - core.config_manager - DEBUG - config_manager.py:109 - Config updated: api_keys.test_service = test_key_123
+2025-08-17 16:23:28,539 - core.error_handler - WARNING - error_handler.py:209 - Error in Test context: Test error for framework testing (Type: system, Module: )
+2025-08-17 16:23:28,539 - core.error_handler - DEBUG - error_handler.py:215 - Full traceback: Traceback (most recent call last):
+  File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_framework.py", line 58, in test_error_handler
+    raise ValueError("Test error for framework testing")
+ValueError: Test error for framework testing
+
+2025-08-17 16:23:28,540 - core.error_handler - DEBUG - error_handler.py:229 - No recovery strategy available for system
+2025-08-17 16:23:28,540 - stosos.modules.test_module - INFO - test_module.py:28 - Initializing test module
+2025-08-17 16:23:28,574 - kivy - INFO - __init__.py:67 - Window: Provider: sdl2
+2025-08-17 16:23:29,418 - kivy - INFO - __init__.py:45 - GL: Using the "OpenGL ES 2" graphics system
+2025-08-17 16:23:29,418 - kivy - INFO - __init__.py:51 - GL: Backend used <sdl2>
+2025-08-17 16:23:29,419 - kivy - INFO - __init__.py:55 - GL: OpenGL version <b'2.1 Metal - 90.5'>
+2025-08-17 16:23:29,419 - kivy - INFO - __init__.py:56 - GL: OpenGL vendor <b'Apple'>
+2025-08-17 16:23:29,419 - kivy - INFO - __init__.py:57 - GL: OpenGL renderer <b'Apple M2'>
+2025-08-17 16:23:29,419 - kivy - INFO - __init__.py:61 - GL: OpenGL parsed version: 2, 1
+2025-08-17 16:23:29,419 - kivy - INFO - __init__.py:81 - GL: Shading version <b'1.20'>
+2025-08-17 16:23:29,419 - kivy - INFO - __init__.py:83 - GL: Texture max size <16384>
+2025-08-17 16:23:29,419 - kivy - INFO - __init__.py:85 - GL: Texture max units <16>
+2025-08-17 16:23:29,446 - kivy - INFO - window_sdl2.py:369 - Window: auto add sdl2 input provider
+2025-08-17 16:23:29,478 - kivy - INFO - __init__.py:2308 - Window: virtual keyboard not allowed, single mode, not docked
+2025-08-17 16:23:29,484 - stosos.modules.test_module - INFO - test_module.py:65 - Test module initialized successfully
+2025-08-17 16:23:29,484 - stosos.modules.test_module - INFO - test_module.py:93 - Test module received voice command: test command
+2025-08-17 16:23:29,485 - stosos.modules.test_module - DEBUG - base_module.py:52 - Module test_module activated
+2025-08-17 16:23:29,485 - stosos.modules.test_module - DEBUG - base_module.py:61 - Module test_module deactivated
+2025-08-17 16:23:29,485 - stosos.modules.test_module - DEBUG - base_module.py:91 - Module test_module cleaned up
+2025-08-17 16:23:29,485 - stosos.modules.test_module - INFO - test_module.py:28 - Initializing test module
+2025-08-17 16:23:29,486 - stosos.modules.test_module - INFO - test_module.py:65 - Test module initialized successfully
+2025-08-17 16:23:29,486 - core.screen_manager - INFO - screen_manager.py:65 - Module registered successfully: test_module
+2025-08-17 16:23:29,486 - stosos.modules.test_module - DEBUG - base_module.py:91 - Module test_module cleaned up
+2025-08-17 16:23:29,486 - core.screen_manager - INFO - screen_manager.py:104 - Module unregistered successfully: test_module
+2025-08-17 16:24:02,381 - kivy - INFO - __init__.py:512 - Kivy: v2.3.1
+2025-08-17 16:24:02,382 - kivy - INFO - __init__.py:513 - Kivy: Installed at "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kivy/__init__.py"
+2025-08-17 16:24:02,382 - kivy - INFO - __init__.py:514 - Python: v3.13.4 (v3.13.4:8a526ec7cbe, Jun  3 2025, 21:14:54) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-08-17 16:24:02,382 - kivy - INFO - __init__.py:515 - Python: Interpreter at "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3"
+2025-08-17 16:24:02,382 - kivy - INFO - logger.py:232 - Logger: Purge log fired. Processing...
+2025-08-17 16:24:02,383 - kivy - INFO - logger.py:249 - Logger: Purge finished!
+2025-08-17 16:24:02,438 - kivy - INFO - factory.py:186 - Factory: 195 symbols loaded
+2025-08-17 16:24:02,565 - kivy - INFO - __init__.py:145 - Image: Providers: img_tex, img_imageio, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+2025-08-17 16:24:02,595 - kivy - INFO - __init__.py:67 - Text: Provider: sdl2
+2025-08-17 16:24:02,608 - core.config_manager - INFO - config_manager.py:36 - No config file found, using defaults
+2025-08-17 16:24:02,620 - kivy - INFO - __init__.py:67 - Window: Provider: sdl2
+2025-08-17 16:24:03,055 - kivy - INFO - __init__.py:45 - GL: Using the "OpenGL ES 2" graphics system
+2025-08-17 16:24:03,056 - kivy - INFO - __init__.py:51 - GL: Backend used <sdl2>
+2025-08-17 16:24:03,056 - kivy - INFO - __init__.py:55 - GL: OpenGL version <b'2.1 Metal - 90.5'>
+2025-08-17 16:24:03,056 - kivy - INFO - __init__.py:56 - GL: OpenGL vendor <b'Apple'>
+2025-08-17 16:24:03,057 - kivy - INFO - __init__.py:57 - GL: OpenGL renderer <b'Apple M2'>
+2025-08-17 16:24:03,057 - kivy - INFO - __init__.py:61 - GL: OpenGL parsed version: 2, 1
+2025-08-17 16:24:03,057 - kivy - INFO - __init__.py:81 - GL: Shading version <b'1.20'>
+2025-08-17 16:24:03,057 - kivy - INFO - __init__.py:83 - GL: Texture max size <16384>
+2025-08-17 16:24:03,057 - kivy - INFO - __init__.py:85 - GL: Texture max units <16>
+2025-08-17 16:24:03,071 - kivy - INFO - window_sdl2.py:369 - Window: auto add sdl2 input provider
+2025-08-17 16:24:03,091 - kivy - INFO - __init__.py:2308 - Window: virtual keyboard not allowed, single mode, not docked
+2025-08-17 16:25:15,499 - stosos.modules.test_module - INFO - test_module.py:28 - Initializing test module
+2025-08-17 16:25:16,560 - stosos.modules.test_module - INFO - test_module.py:65 - Test module initialized successfully
+2025-08-17 16:25:16,560 - stosos.modules.test_module - INFO - test_module.py:93 - Test module received voice command: test command
+2025-08-17 16:25:16,561 - stosos.modules.test_module - INFO - test_module.py:28 - Initializing test module
+2025-08-17 16:25:16,561 - stosos.modules.test_module - INFO - test_module.py:65 - Test module initialized successfully
+2025-08-17 16:25:16,561 - core.screen_manager - INFO - screen_manager.py:65 - Module registered successfully: test_module
+2025-08-17 16:25:16,561 - core.screen_manager - INFO - screen_manager.py:104 - Module unregistered successfully: test_module
+2025-08-17 16:25:16,562 - core.config_manager - INFO - config_manager.py:36 - No config file found, using defaults
+2025-08-17 16:25:16,562 - core.config_manager - INFO - config_manager.py:79 - Configuration saved successfully
+2025-08-17 16:25:16,563 - core.error_handler - INFO - error_handler.py:211 - Error in Verification test: Test error for verification (Type: system, Module: )
+2025-08-17 16:30:16,345 - stosos.modules.ui_demo - INFO - ui_demo.py:37 - Initializing UI Demo module
+2025-08-17 16:31:14,238 - stosos.modules.ui_demo - INFO - ui_demo.py:37 - Initializing UI Demo module
+2025-08-17 16:32:14,126 - stosos.modules.ui_demo - INFO - ui_demo.py:37 - Initializing UI Demo module
+2025-08-17 16:32:51,204 - stosos.modules.ui_demo - INFO - ui_demo.py:37 - Initializing UI Demo module
+2025-08-17 16:33:46,682 - stosos.modules.ui_demo - INFO - ui_demo.py:37 - Initializing UI Demo module
+2025-08-17 16:36:36,108 - __main__ - INFO - main.py:268 - Starting StosOS application
+2025-08-17 16:36:36,109 - __main__ - INFO - main.py:48 - Starting StosOS Desktop Environment
+2025-08-17 16:36:36,110 - core.config_manager - INFO - config_manager.py:30 - Configuration loaded successfully
+2025-08-17 16:36:36,117 - __main__ - INFO - main.py:127 - Main interface created
+2025-08-17 16:36:36,117 - __main__ - INFO - main.py:86 - Application initialized successfully
+2025-08-17 16:36:36,120 - __main__ - INFO - main.py:136 - Application started - showing branding sequence
+2025-08-17 16:36:36,120 - ui.branding_screen - INFO - branding_screen.py:347 - Showing branding screen
+2025-08-17 16:36:36,134 - ui.branding_screen - INFO - branding_screen.py:152 - Starting branding animation sequence
+2025-08-17 16:36:40,313 - ui.branding_screen - INFO - branding_screen.py:215 - Starting initialization sequence
+2025-08-17 16:36:45,825 - ui.branding_screen - INFO - branding_screen.py:258 - Branding sequence complete, transitioning to main interface
+2025-08-17 16:36:46,444 - ui.branding_screen - INFO - branding_screen.py:366 - Branding screen completed
+2025-08-17 16:36:46,445 - __main__ - INFO - main.py:154 - Branding complete - initializing main interface
+2025-08-17 16:36:46,446 - stosos.modules.test_module - INFO - test_module.py:28 - Initializing test module
+2025-08-17 16:36:46,451 - stosos.modules.test_module - INFO - test_module.py:65 - Test module initialized successfully
+2025-08-17 16:36:46,452 - core.screen_manager - INFO - screen_manager.py:65 - Module registered successfully: test_module
+2025-08-17 16:36:46,452 - __main__ - INFO - main.py:250 - Module registered with application: test_module
+2025-08-17 16:36:46,452 - __main__ - INFO - main.py:173 - Test module registered successfully
+2025-08-17 16:36:46,452 - stosos.modules.ui_demo - INFO - ui_demo.py:37 - Initializing UI Demo module
+2025-08-17 16:36:46,475 - core.screen_manager - INFO - screen_manager.py:65 - Module registered successfully: ui_demo
+2025-08-17 16:36:46,475 - __main__ - INFO - main.py:250 - Module registered with application: ui_demo
+2025-08-17 16:36:46,475 - __main__ - INFO - main.py:180 - UI Demo module registered successfully
+2025-08-17 16:36:46,475 - __main__ - INFO - main.py:206 - Transitioned to main interface
+2025-08-17 16:36:47,051 - stosos.modules.ui_demo - INFO - ui_demo.py:369 - UI Demo module activated
+2025-08-17 16:37:00,381 - __main__ - ERROR - main.py:272 - Application failed to start: StosOSButton._on_touch_up() takes 2 positional arguments but 3 were given
+2025-08-17 16:43:33,133 - core.power_manager - WARNING - power_manager.py:421 - No brightness control method detected
+2025-08-17 16:43:33,135 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:43:33,138 - core.power_manager - WARNING - power_manager.py:421 - No brightness control method detected
+2025-08-17 16:43:33,138 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:43:33,141 - core.power_manager - WARNING - power_manager.py:421 - No brightness control method detected
+2025-08-17 16:43:33,142 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:43:33,142 - core.power_manager - INFO - power_manager.py:222 - Forcing display sleep
+2025-08-17 16:43:33,142 - core.power_manager - INFO - power_manager.py:362 - Power state changed: active -> sleep
+2025-08-17 16:43:33,142 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:33,142 - core.power_manager - INFO - power_manager.py:196 - Waking display from sleep (source: test)
+2025-08-17 16:43:33,142 - core.power_manager - INFO - power_manager.py:362 - Power state changed: sleep -> wake
+2025-08-17 16:43:33,348 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:33,348 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 50%
+2025-08-17 16:43:33,348 - core.power_manager - INFO - power_manager.py:196 - Waking display from wake (source: user_activity)
+2025-08-17 16:43:34,453 - core.power_manager - INFO - power_manager.py:196 - Waking display from wake (source: user_activity)
+2025-08-17 16:43:34,454 - core.power_manager - INFO - power_manager.py:196 - Waking display from wake (source: user_activity)
+2025-08-17 16:43:34,454 - core.power_manager - INFO - power_manager.py:196 - Waking display from wake (source: user_activity)
+2025-08-17 16:43:34,455 - core.power_manager - INFO - power_manager.py:222 - Forcing display sleep
+2025-08-17 16:43:34,455 - core.power_manager - INFO - power_manager.py:362 - Power state changed: wake -> sleep
+2025-08-17 16:43:34,455 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:34,455 - core.power_manager - INFO - power_manager.py:196 - Waking display from sleep (source: manual)
+2025-08-17 16:43:34,455 - core.power_manager - INFO - power_manager.py:362 - Power state changed: sleep -> wake
+2025-08-17 16:43:34,660 - core.power_manager - INFO - power_manager.py:196 - Waking display from wake (source: user_activity)
+2025-08-17 16:43:34,661 - core.power_manager - INFO - power_manager.py:196 - Waking display from wake (source: user_activity)
+2025-08-17 16:43:34,661 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:34,661 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 0%
+2025-08-17 16:43:34,662 - core.power_manager - INFO - power_manager.py:362 - Power state changed: wake -> active
+2025-08-17 16:43:34,663 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:34,663 - core.power_manager - INFO - power_manager.py:107 - Power management monitoring started
+2025-08-17 16:43:35,168 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,169 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 50%
+2025-08-17 16:43:35,169 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,169 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 50%
+2025-08-17 16:43:35,169 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,169 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 50%
+2025-08-17 16:43:35,181 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,182 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 51%
+2025-08-17 16:43:35,182 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,182 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 51%
+2025-08-17 16:43:35,182 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,182 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 51%
+2025-08-17 16:43:35,195 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,195 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 52%
+2025-08-17 16:43:35,195 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,196 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 52%
+2025-08-17 16:43:35,196 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,196 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 52%
+2025-08-17 16:43:35,207 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,208 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 53%
+2025-08-17 16:43:35,208 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,208 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 53%
+2025-08-17 16:43:35,209 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,209 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 53%
+2025-08-17 16:43:35,220 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,220 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 54%
+2025-08-17 16:43:35,221 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,221 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 54%
+2025-08-17 16:43:35,221 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,221 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 54%
+2025-08-17 16:43:35,233 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,233 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 55%
+2025-08-17 16:43:35,233 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,233 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 55%
+2025-08-17 16:43:35,234 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,234 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 55%
+2025-08-17 16:43:35,245 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,246 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 56%
+2025-08-17 16:43:35,246 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,246 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 56%
+2025-08-17 16:43:35,246 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,246 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 56%
+2025-08-17 16:43:35,259 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,259 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 57%
+2025-08-17 16:43:35,259 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,259 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 57%
+2025-08-17 16:43:35,259 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,259 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 57%
+2025-08-17 16:43:35,270 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,270 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 58%
+2025-08-17 16:43:35,271 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,271 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 58%
+2025-08-17 16:43:35,272 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,272 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 58%
+2025-08-17 16:43:35,281 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,282 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 59%
+2025-08-17 16:43:35,282 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,282 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 59%
+2025-08-17 16:43:35,282 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,282 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 59%
+2025-08-17 16:43:35,664 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,664 - core.power_manager - INFO - power_manager.py:125 - Power management monitoring stopped
+2025-08-17 16:43:35,665 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:43:35,665 - core.power_manager - INFO - power_manager.py:125 - Power management monitoring stopped
+2025-08-17 16:44:11,351 - core.power_manager - WARNING - power_manager.py:421 - No brightness control method detected
+2025-08-17 16:44:11,352 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:44:11,355 - core.power_manager - WARNING - power_manager.py:421 - No brightness control method detected
+2025-08-17 16:44:11,355 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:44:11,358 - core.power_manager - WARNING - power_manager.py:421 - No brightness control method detected
+2025-08-17 16:44:11,358 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:44:11,358 - core.power_manager - INFO - power_manager.py:222 - Forcing display sleep
+2025-08-17 16:44:11,359 - core.power_manager - INFO - power_manager.py:362 - Power state changed: active -> sleep
+2025-08-17 16:44:11,359 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:11,359 - core.power_manager - INFO - power_manager.py:196 - Waking display from sleep (source: test)
+2025-08-17 16:44:11,359 - core.power_manager - INFO - power_manager.py:362 - Power state changed: sleep -> wake
+2025-08-17 16:44:11,564 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:11,565 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 50%
+2025-08-17 16:44:11,565 - core.power_manager - INFO - power_manager.py:196 - Waking display from wake (source: user_activity)
+2025-08-17 16:44:12,671 - core.power_manager - INFO - power_manager.py:196 - Waking display from wake (source: user_activity)
+2025-08-17 16:44:12,672 - core.power_manager - INFO - power_manager.py:196 - Waking display from wake (source: user_activity)
+2025-08-17 16:44:12,672 - core.power_manager - INFO - power_manager.py:196 - Waking display from wake (source: user_activity)
+2025-08-17 16:44:12,672 - core.power_manager - INFO - power_manager.py:222 - Forcing display sleep
+2025-08-17 16:44:12,672 - core.power_manager - INFO - power_manager.py:362 - Power state changed: wake -> sleep
+2025-08-17 16:44:12,672 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:12,672 - core.power_manager - INFO - power_manager.py:196 - Waking display from sleep (source: manual)
+2025-08-17 16:44:12,673 - core.power_manager - INFO - power_manager.py:362 - Power state changed: sleep -> wake
+2025-08-17 16:44:12,878 - core.power_manager - INFO - power_manager.py:196 - Waking display from wake (source: user_activity)
+2025-08-17 16:44:12,879 - core.power_manager - INFO - power_manager.py:196 - Waking display from wake (source: user_activity)
+2025-08-17 16:44:12,879 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:12,879 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 0%
+2025-08-17 16:44:12,880 - core.power_manager - INFO - power_manager.py:362 - Power state changed: wake -> active
+2025-08-17 16:44:12,880 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:12,880 - core.power_manager - INFO - power_manager.py:107 - Power management monitoring started
+2025-08-17 16:44:13,381 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,382 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 50%
+2025-08-17 16:44:13,382 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,383 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 50%
+2025-08-17 16:44:13,384 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,384 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 50%
+2025-08-17 16:44:13,395 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,395 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 51%
+2025-08-17 16:44:13,396 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,396 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 51%
+2025-08-17 16:44:13,396 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,396 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 51%
+2025-08-17 16:44:13,406 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,407 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 52%
+2025-08-17 16:44:13,407 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,407 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 52%
+2025-08-17 16:44:13,409 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,409 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 52%
+2025-08-17 16:44:13,418 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,419 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 53%
+2025-08-17 16:44:13,419 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,419 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 53%
+2025-08-17 16:44:13,420 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,420 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 53%
+2025-08-17 16:44:13,431 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,432 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 54%
+2025-08-17 16:44:13,432 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,432 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 54%
+2025-08-17 16:44:13,432 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,432 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 54%
+2025-08-17 16:44:13,444 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,444 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 55%
+2025-08-17 16:44:13,444 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,445 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 55%
+2025-08-17 16:44:13,445 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,445 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 55%
+2025-08-17 16:44:13,455 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,455 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 56%
+2025-08-17 16:44:13,457 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,457 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 56%
+2025-08-17 16:44:13,457 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,458 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 56%
+2025-08-17 16:44:13,468 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,468 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 57%
+2025-08-17 16:44:13,469 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,469 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 57%
+2025-08-17 16:44:13,469 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,469 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 57%
+2025-08-17 16:44:13,481 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,481 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 58%
+2025-08-17 16:44:13,482 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,482 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 58%
+2025-08-17 16:44:13,482 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,482 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 58%
+2025-08-17 16:44:13,493 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,493 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 59%
+2025-08-17 16:44:13,494 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,494 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 59%
+2025-08-17 16:44:13,494 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,494 - core.power_manager - INFO - power_manager.py:236 - Brightness manually set to 59%
+2025-08-17 16:44:13,885 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,885 - core.power_manager - INFO - power_manager.py:125 - Power management monitoring stopped
+2025-08-17 16:44:13,886 - core.power_manager - WARNING - power_manager.py:381 - No brightness control method available
+2025-08-17 16:44:13,886 - core.power_manager - INFO - power_manager.py:125 - Power management monitoring stopped
+2025-08-17 16:44:50,142 - core.power_manager - WARNING - power_manager.py:429 - No brightness control method detected
+2025-08-17 16:44:50,143 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:44:50,146 - core.power_manager - WARNING - power_manager.py:429 - No brightness control method detected
+2025-08-17 16:44:50,146 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:44:50,150 - core.power_manager - WARNING - power_manager.py:429 - No brightness control method detected
+2025-08-17 16:44:50,150 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:44:50,150 - core.power_manager - INFO - power_manager.py:226 - Forcing display sleep
+2025-08-17 16:44:50,150 - core.power_manager - INFO - power_manager.py:366 - Power state changed: active -> sleep
+2025-08-17 16:44:50,150 - core.power_manager - INFO - power_manager.py:196 - Waking display from sleep (source: test)
+2025-08-17 16:44:50,150 - core.power_manager - INFO - power_manager.py:366 - Power state changed: sleep -> wake
+2025-08-17 16:44:50,351 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 50%
+2025-08-17 16:44:50,351 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 0%
+2025-08-17 16:44:50,351 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 100%
+2025-08-17 16:44:50,351 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 0%
+2025-08-17 16:44:50,351 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 100%
+2025-08-17 16:44:50,352 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 0%
+2025-08-17 16:44:50,352 - core.power_manager - INFO - power_manager.py:196 - Waking display from wake (source: user_activity)
+2025-08-17 16:44:51,457 - core.power_manager - INFO - power_manager.py:196 - Waking display from wake (source: user_activity)
+2025-08-17 16:44:51,458 - core.power_manager - INFO - power_manager.py:196 - Waking display from wake (source: user_activity)
+2025-08-17 16:44:51,458 - core.power_manager - INFO - power_manager.py:196 - Waking display from wake (source: user_activity)
+2025-08-17 16:44:51,458 - core.power_manager - INFO - power_manager.py:226 - Forcing display sleep
+2025-08-17 16:44:51,459 - core.power_manager - INFO - power_manager.py:366 - Power state changed: wake -> sleep
+2025-08-17 16:44:51,459 - core.power_manager - INFO - power_manager.py:196 - Waking display from sleep (source: manual)
+2025-08-17 16:44:51,459 - core.power_manager - INFO - power_manager.py:366 - Power state changed: sleep -> wake
+2025-08-17 16:44:51,663 - core.power_manager - INFO - power_manager.py:196 - Waking display from wake (source: user_activity)
+2025-08-17 16:44:51,664 - core.power_manager - INFO - power_manager.py:196 - Waking display from wake (source: user_activity)
+2025-08-17 16:44:51,664 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 0%
+2025-08-17 16:44:51,664 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 100%
+2025-08-17 16:44:51,666 - core.power_manager - INFO - power_manager.py:366 - Power state changed: wake -> active
+2025-08-17 16:44:51,666 - core.power_manager - INFO - power_manager.py:107 - Power management monitoring started
+2025-08-17 16:44:52,167 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 50%
+2025-08-17 16:44:52,167 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 50%
+2025-08-17 16:44:52,167 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 50%
+2025-08-17 16:44:52,178 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 51%
+2025-08-17 16:44:52,180 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 51%
+2025-08-17 16:44:52,180 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 51%
+2025-08-17 16:44:52,191 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 52%
+2025-08-17 16:44:52,192 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 52%
+2025-08-17 16:44:52,193 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 52%
+2025-08-17 16:44:52,204 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 53%
+2025-08-17 16:44:52,204 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 53%
+2025-08-17 16:44:52,204 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 53%
+2025-08-17 16:44:52,217 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 54%
+2025-08-17 16:44:52,217 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 54%
+2025-08-17 16:44:52,217 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 54%
+2025-08-17 16:44:52,230 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 55%
+2025-08-17 16:44:52,230 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 55%
+2025-08-17 16:44:52,230 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 55%
+2025-08-17 16:44:52,243 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 56%
+2025-08-17 16:44:52,243 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 56%
+2025-08-17 16:44:52,243 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 56%
+2025-08-17 16:44:52,255 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 57%
+2025-08-17 16:44:52,255 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 57%
+2025-08-17 16:44:52,255 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 57%
+2025-08-17 16:44:52,268 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 58%
+2025-08-17 16:44:52,268 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 58%
+2025-08-17 16:44:52,268 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 58%
+2025-08-17 16:44:52,281 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 59%
+2025-08-17 16:44:52,281 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 59%
+2025-08-17 16:44:52,282 - core.power_manager - INFO - power_manager.py:240 - Brightness manually set to 59%
+2025-08-17 16:44:52,669 - core.power_manager - INFO - power_manager.py:125 - Power management monitoring stopped
+2025-08-17 16:44:52,669 - core.power_manager - INFO - power_manager.py:125 - Power management monitoring stopped
+2025-08-17 16:45:34,800 - core.power_manager - WARNING - power_manager.py:434 - No brightness control method detected
+2025-08-17 16:45:34,801 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:45:34,804 - core.power_manager - WARNING - power_manager.py:434 - No brightness control method detected
+2025-08-17 16:45:34,804 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:45:34,807 - core.power_manager - WARNING - power_manager.py:434 - No brightness control method detected
+2025-08-17 16:45:34,807 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:45:34,807 - core.power_manager - INFO - power_manager.py:231 - Forcing display sleep
+2025-08-17 16:45:34,807 - core.power_manager - INFO - power_manager.py:371 - Power state changed: active -> sleep
+2025-08-17 16:45:34,807 - core.power_manager - INFO - power_manager.py:196 - Waking display from sleep (source: test)
+2025-08-17 16:45:34,807 - core.power_manager - INFO - power_manager.py:371 - Power state changed: sleep -> wake
+2025-08-17 16:54:29,161 - core.power_manager - WARNING - power_manager.py:440 - No brightness control method detected
+2025-08-17 16:54:29,162 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:54:29,166 - core.power_manager - WARNING - power_manager.py:440 - No brightness control method detected
+2025-08-17 16:54:29,166 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:54:29,169 - core.power_manager - WARNING - power_manager.py:440 - No brightness control method detected
+2025-08-17 16:54:29,169 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:54:29,169 - core.power_manager - INFO - power_manager.py:237 - Forcing display sleep
+2025-08-17 16:54:29,170 - core.power_manager - INFO - power_manager.py:377 - Power state changed: active -> sleep
+2025-08-17 16:54:29,170 - core.power_manager - INFO - power_manager.py:196 - Waking display from sleep (source: test)
+2025-08-17 16:54:29,170 - core.power_manager - INFO - power_manager.py:377 - Power state changed: sleep -> wake
+2025-08-17 16:57:02,710 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 16:57:02,710 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:57:02,713 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 16:57:02,713 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:57:02,714 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 50%
+2025-08-17 16:57:02,714 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 0%
+2025-08-17 16:57:02,714 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 100%
+2025-08-17 16:57:02,714 - core.power_manager - INFO - power_manager.py:236 - Forcing display sleep
+2025-08-17 16:57:02,714 - core.power_manager - INFO - power_manager.py:376 - Power state changed: active -> sleep
+2025-08-17 16:57:02,714 - core.power_manager - INFO - power_manager.py:376 - Power state changed: sleep -> active
+2025-08-17 16:58:07,459 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 16:58:07,460 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:58:08,707 - core.config_manager - INFO - config_manager.py:30 - Configuration loaded successfully
+2025-08-17 16:58:08,716 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 16:58:08,716 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:58:08,717 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 16:58:08,717 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_power_integration.py", line 60, in test_power_integration
+2025-08-17 16:58:08,717 - kivy - WARNING - logger.py:390 - stderr:     demo_module = PowerDemoModule()
+2025-08-17 16:58:08,717 - kivy - WARNING - logger.py:390 - stderr: TypeError: Can't instantiate abstract class PowerDemoModule without an implementation for abstract methods 'get_screen', 'initialize'
+2025-08-17 16:58:26,477 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 16:58:26,477 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:58:26,719 - core.config_manager - INFO - config_manager.py:30 - Configuration loaded successfully
+2025-08-17 16:58:26,725 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 16:58:26,725 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:58:26,726 - kivy - WARNING - logger.py:390 - stderr: Traceback (most recent call last):
+2025-08-17 16:58:26,726 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/test_power_integration.py", line 60, in test_power_integration
+2025-08-17 16:58:26,726 - kivy - WARNING - logger.py:390 - stderr:     demo_module = PowerDemoModule()
+2025-08-17 16:58:26,726 - kivy - WARNING - logger.py:390 - stderr:   File "/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/power_demo.py", line 24, in __init__
+2025-08-17 16:58:26,726 - kivy - WARNING - logger.py:390 - stderr:     super().__init__(
+2025-08-17 16:58:26,726 - kivy - WARNING - logger.py:390 - stderr:     ~~~~~~~~~~~~~~~~^
+2025-08-17 16:58:26,726 - kivy - WARNING - logger.py:390 - stderr:         module_id="power_demo",
+2025-08-17 16:58:26,726 - kivy - WARNING - logger.py:390 - stderr:         ^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-17 16:58:26,726 - kivy - WARNING - logger.py:390 - stderr:         name="Power Management Demo",
+2025-08-17 16:58:26,726 - kivy - WARNING - logger.py:390 - stderr:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-17 16:58:26,726 - kivy - WARNING - logger.py:390 - stderr:         description="Interactive demonstration of power management features"
+2025-08-17 16:58:26,726 - kivy - WARNING - logger.py:390 - stderr:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-17 16:58:26,726 - kivy - WARNING - logger.py:390 - stderr:     )
+2025-08-17 16:58:26,726 - kivy - WARNING - logger.py:390 - stderr:     ^
+2025-08-17 16:58:26,726 - kivy - WARNING - logger.py:390 - stderr: TypeError: BaseModule.__init__() got an unexpected keyword argument 'name'
+2025-08-17 16:58:50,991 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 16:58:50,991 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:58:51,230 - core.config_manager - INFO - config_manager.py:30 - Configuration loaded successfully
+2025-08-17 16:58:51,236 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 16:58:51,236 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:58:51,250 - core.power_manager - INFO - power_manager.py:236 - Forcing display sleep
+2025-08-17 16:58:51,250 - core.power_manager - INFO - power_manager.py:376 - Power state changed: active -> sleep
+2025-08-17 16:58:51,250 - core.power_manager - INFO - power_manager.py:376 - Power state changed: sleep -> active
+2025-08-17 16:58:51,250 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 0%
+2025-08-17 16:58:51,250 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 100%
+2025-08-17 16:58:51,250 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 50%
+2025-08-17 16:58:51,251 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 50%
+2025-08-17 16:58:51,262 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 51%
+2025-08-17 16:58:51,262 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 51%
+2025-08-17 16:58:51,274 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 52%
+2025-08-17 16:58:51,274 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 52%
+2025-08-17 16:58:51,286 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 53%
+2025-08-17 16:58:51,287 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 53%
+2025-08-17 16:58:51,298 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 54%
+2025-08-17 16:58:51,298 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 54%
+2025-08-17 16:58:51,311 - stosos.modules.power_demo - INFO - power_demo.py:277 - Power demo module cleaned up
+2025-08-17 16:58:51,311 - core.power_manager - INFO - power_manager.py:125 - Power management monitoring stopped
+2025-08-17 16:59:46,140 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 16:59:46,141 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:59:47,337 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
+2025-08-17 16:59:47,337 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-17 16:59:47,337 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 100%
+2025-08-17 16:59:47,338 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 75%
+2025-08-17 16:59:47,338 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 50%
+2025-08-17 16:59:47,338 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 25%
+2025-08-17 16:59:47,338 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 0%
+2025-08-17 16:59:47,338 - core.power_manager - INFO - power_manager.py:250 - Brightness manually set to 100%
+2025-08-17 16:59:47,338 - core.power_manager - INFO - power_manager.py:236 - Forcing display sleep
+2025-08-17 16:59:47,338 - core.power_manager - INFO - power_manager.py:376 - Power state changed: active -> sleep
+2025-08-17 16:59:47,338 - core.power_manager - INFO - power_manager.py:376 - Power state changed: sleep -> active
+2025-08-17 16:59:47,338 - core.power_manager - INFO - power_manager.py:236 - Forcing display sleep
+2025-08-17 16:59:47,338 - core.power_manager - INFO - power_manager.py:376 - Power state changed: active -> sleep
+2025-08-17 16:59:47,338 - core.power_manager - INFO - power_manager.py:195 - Waking display from sleep (source: manual)
+2025-08-17 16:59:47,339 - core.power_manager - INFO - power_manager.py:376 - Power state changed: sleep -> active
+2025-08-17 16:59:47,339 - core.power_manager - INFO - power_manager.py:236 - Forcing display sleep
+2025-08-17 16:59:47,339 - core.power_manager - INFO - power_manager.py:376 - Power state changed: active -> sleep
+2025-08-17 16:59:47,339 - core.power_manager - INFO - power_manager.py:195 - Waking display from sleep (source: touch)
+2025-08-17 16:59:47,339 - core.power_manager - INFO - power_manager.py:376 - Power state changed: sleep -> active
+2025-08-17 16:59:47,339 - core.power_manager - INFO - power_manager.py:236 - Forcing display sleep
+2025-08-17 16:59:47,340 - core.power_manager - INFO - power_manager.py:376 - Power state changed: active -> sleep
+2025-08-17 16:59:47,340 - core.power_manager - INFO - power_manager.py:195 - Waking display from sleep (source: voice)
+2025-08-17 16:59:47,340 - core.power_manager - INFO - power_manager.py:376 - Power state changed: sleep -> active
+2025-08-17 16:59:47,340 - core.power_manager - INFO - power_manager.py:236 - Forcing display sleep
+2025-08-17 16:59:47,340 - core.power_manager - INFO - power_manager.py:376 - Power state changed: active -> sleep
+2025-08-17 16:59:47,340 - core.power_manager - INFO - power_manager.py:195 - Waking display from sleep (source: network)
+2025-08-17 16:59:47,340 - core.power_manager - INFO - power_manager.py:376 - Power state changed: sleep -> active
+2025-08-17 16:59:48,441 - stosos.modules.power_demo - INFO - power_demo.py:39 - Initializing power management demo module
+2025-08-17 16:59:48,471 - core.config_manager - INFO - config_manager.py:30 - Configuration loaded successfully
+2025-08-17 16:59:48,471 - core.power_manager - INFO - power_manager.py:125 - Power management monitoring stopped
+2025-08-17 16:59:48,471 - stosos.modules.power_demo - INFO - power_demo.py:277 - Power demo module cleaned up
