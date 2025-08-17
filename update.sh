@@ -15,8 +15,8 @@ NC='\033[0m' # No Color
 # Configuration
 STOSOS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VENV_DIR="$STOSOS_DIR/venv"
-BACKUP_DIR="/tmp/stosos_backup_$(date +%Y%m%d_%H%M%S)"
-LOG_FILE="/tmp/stosos_update.log"
+BACKUP_DIR="$HOME/stosos_backup_$(date +%Y%m%d_%H%M%S)"
+LOG_FILE="$HOME/stosos_update.log"
 
 log() {
     echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" | tee -a "$LOG_FILE"
@@ -249,7 +249,7 @@ cleanup() {
     print_step "Cleaning up"
     
     # Remove temporary files
-    rm -f /tmp/stosos_*.tmp 2>/dev/null || true
+    rm -f "$HOME"/stosos_*.tmp 2>/dev/null || true
     
     print_info "Cleanup completed"
 }

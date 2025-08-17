@@ -20,7 +20,7 @@ VENV_DIR="$STOSOS_DIR/venv"
 SERVICE_NAME="stosos"
 
 # Logging
-LOG_FILE="/tmp/stosos_install.log"
+LOG_FILE="$HOME/stosos_install.log"
 
 log() {
     echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" | tee -a "$LOG_FILE"
@@ -320,7 +320,7 @@ else
 fi
 
 # Backup current installation
-BACKUP_DIR="/tmp/stosos_backup_$(date +%Y%m%d_%H%M%S)"
+BACKUP_DIR="$HOME/stosos_backup_$(date +%Y%m%d_%H%M%S)"
 echo "Creating backup at $BACKUP_DIR..."
 cp -r "$STOSOS_DIR" "$BACKUP_DIR"
 
@@ -386,7 +386,7 @@ cleanup() {
     print_step "Cleaning up temporary files"
     
     # Remove any temporary files
-    rm -f /tmp/stosos_*.tmp
+    rm -f "$HOME"/stosos_*.tmp
     
     print_info "Cleanup completed"
 }
