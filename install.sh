@@ -79,7 +79,8 @@ check_requirements() {
     
     # Check Python version
     python_version=$(python3 -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}')")
-    if [ "$(echo "$python_version >= 3.8" | bc -l)" != "1" ]; then
+    python_check=$(python3 -c "import sys; print('OK' if sys.version_info >= (3, 8) else 'FAIL')")
+    if [ "$python_check" != "OK" ]; then
         print_error "Python 3.8 or higher required. Found: $python_version"
         exit 1
     fi
@@ -99,6 +100,7 @@ install_system_dependencies() {
         python3-pip \
         python3-venv \
         build-essential \
+        bc \
         libffi-dev \
         libssl-dev \
         libjpeg-dev \
