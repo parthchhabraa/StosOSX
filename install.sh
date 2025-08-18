@@ -13,8 +13,13 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Configuration - Dynamic user detection
-STOSOS_USER="$USER"
-STOSOS_HOME="$HOME"
+if [ "$SUDO_USER" ]; then
+    STOSOS_USER="$SUDO_USER"
+    STOSOS_HOME=$(getent passwd "$SUDO_USER" | cut -d: -f6)
+else
+    STOSOS_USER="$USER"
+    STOSOS_HOME="$HOME"
+fi
 STOSOS_DIR="$STOSOS_HOME/stosos"
 VENV_DIR="$STOSOS_DIR/venv"
 SERVICE_NAME="stosos"
@@ -201,11 +206,26 @@ setup_directories() {
 setup_systemd_service() {
     print_step "Setting up systemd service"
     
+    # Determine the actual user (not root when using sudo)
+    if [ "$SUDO_USER" ]; then
+        ACTUAL_USER="$SUDO_USER"
+        ACTUAL_HOME=$(getent passwd "$SUDO_USER" | cut -d: -f6)
+        ACTUAL_UID=$(id -u "$SUDO_USER")
+    else
+        ACTUAL_USER="$USER"
+        ACTUAL_HOME="$HOME"
+        ACTUAL_UID=$(id -u)
+    fi
+    
+    # Update paths for actual user
+    ACTUAL_STOSOS_DIR="$ACTUAL_HOME/stosos"
+    ACTUAL_VENV_DIR="$ACTUAL_STOSOS_DIR/venv"
+    
     # Create user systemd directory
-    mkdir -p "$STOSOS_HOME/.config/systemd/user"
+    sudo -u "$ACTUAL_USER" mkdir -p "$ACTUAL_HOME/.config/systemd/user"
     
     # Generate service file dynamically
-    cat > "$STOSOS_HOME/.config/systemd/user/stosos.service" << EOF
+    sudo -u "$ACTUAL_USER" tee "$ACTUAL_HOME/.config/systemd/user/stosos.service" > /dev/null << EOF
 [Unit]
 Description=StosOS Desktop Environment
 After=graphical-session.target
@@ -213,12 +233,12 @@ Wants=graphical-session.target
 
 [Service]
 Type=simple
-User=$STOSOS_USER
-Group=$STOSOS_USER
-WorkingDirectory=$STOSOS_DIR
+User=$ACTUAL_USER
+Group=$ACTUAL_USER
+WorkingDirectory=$ACTUAL_STOSOS_DIR
 Environment=DISPLAY=:0
-Environment=PULSE_RUNTIME_PATH=/run/user/$(id -u)/pulse
-ExecStart=$VENV_DIR/bin/python $STOSOS_DIR/main.py
+Environment=PULSE_RUNTIME_PATH=/run/user/$ACTUAL_UID/pulse
+ExecStart=$ACTUAL_VENV_DIR/bin/python $ACTUAL_STOSOS_DIR/main.py
 ExecStop=/bin/kill -TERM \$MAINPID
 Restart=always
 RestartSec=10
@@ -234,17 +254,20 @@ NoNewPrivileges=true
 PrivateTmp=true
 ProtectSystem=strict
 ProtectHome=read-only
-ReadWritePaths=$STOSOS_DIR/data $STOSOS_DIR/logs $STOSOS_DIR/config
+ReadWritePaths=$ACTUAL_STOSOS_DIR/data $ACTUAL_STOSOS_DIR/logs $ACTUAL_STOSOS_DIR/config
 
 [Install]
 WantedBy=graphical-session.target
 EOF
     
-    # Reload systemd and enable service
-    systemctl --user daemon-reload
-    systemctl --user enable stosos.service
+    # Enable lingering for the user (allows user services to run without login)
+    sudo loginctl enable-linger "$ACTUAL_USER"
     
-    print_info "Systemd service generated and enabled"
+    # Reload systemd and enable service as the actual user
+    sudo -u "$ACTUAL_USER" XDG_RUNTIME_DIR="/run/user/$ACTUAL_UID" systemctl --user daemon-reload
+    sudo -u "$ACTUAL_USER" XDG_RUNTIME_DIR="/run/user/$ACTUAL_UID" systemctl --user enable stosos.service
+    
+    print_info "Systemd service generated and enabled for user: $ACTUAL_USER"
 }
 
 setup_audio() {
@@ -409,8 +432,13 @@ except ImportError as e:
     sys.exit(1)
 "
     
-    # Test service file syntax
-    systemctl --user --dry-run enable stosos.service
+    # Test service file syntax (skip if running as root via sudo)
+    if [ "$SUDO_USER" ]; then
+        ACTUAL_UID=$(id -u "$SUDO_USER")
+        sudo -u "$SUDO_USER" XDG_RUNTIME_DIR="/run/user/$ACTUAL_UID" systemctl --user --dry-run enable stosos.service
+    else
+        systemctl --user --dry-run enable stosos.service
+    fi
     
     print_info "Basic tests passed"
 }
