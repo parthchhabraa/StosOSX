@@ -23,7 +23,7 @@ from core.config_manager import ConfigManager
 from core.base_module import BaseModule
 from core.screen_manager import StosOSScreenManager
 from core.error_handler import error_handler, ErrorType, ErrorSeverity
-from core.power_manager import power_manager, PowerConfig
+from core.power_manager import PowerConfig
 from core.system_manager import SystemManager
 from core.update_manager import UpdateManager
 from core.test_module import TestModule
@@ -46,7 +46,9 @@ class StosOSApp(App):
         self.error_handler = error_handler
         self.branding_manager = BrandingScreenManager()
         self.main_interface_ready = False
-        self.power_manager = power_manager
+        # Initialize power manager with proper logger
+        from core.power_manager import PowerManager
+        self.power_manager = PowerManager(logger=logger)
         self.system_manager = None
         self.update_manager = None
         

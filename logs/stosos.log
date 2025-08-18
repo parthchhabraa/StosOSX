@@ -1174,3 +1174,74 @@ ValueError: Test error for framework testing
 2025-08-17 21:35:26,825 - kivy - WARNING - logger.py:390 - stderr: NameError: name 'Logger' is not defined
 2025-08-17 21:37:28,491 - core.power_manager - WARNING - power_manager.py:439 - No brightness control method detected
 2025-08-17 21:37:28,493 - core.power_manager - INFO - power_manager.py:86 - PowerManager initialized
+2025-08-18 22:41:36,475 - core.power_manager - WARNING - power_manager.py:446 - No brightness control method detected
+2025-08-18 22:41:36,480 - core.power_manager - INFO - power_manager.py:93 - PowerManager initialized
+2025-08-18 22:41:37,101 - __main__ - INFO - main.py:452 - Starting StosOS application
+2025-08-18 22:41:37,110 - __main__ - WARNING - power_manager.py:446 - No brightness control method detected
+2025-08-18 22:41:37,110 - __main__ - INFO - power_manager.py:93 - PowerManager initialized
+2025-08-18 22:41:37,111 - __main__ - INFO - main.py:58 - Starting StosOS Desktop Environment
+2025-08-18 22:41:37,111 - core.config_manager - INFO - config_manager.py:30 - Configuration loaded successfully
+2025-08-18 22:41:37,112 - __main__ - INFO - graphics_optimizer.py:403 - Graphics optimization initialized
+2025-08-18 22:41:37,112 - __main__ - INFO - system_manager.py:83 - Performance optimization setup complete
+2025-08-18 22:41:37,113 - __main__ - INFO - main.py:175 - Power management initialized
+2025-08-18 22:41:37,116 - __main__ - INFO - main.py:147 - Main interface created
+2025-08-18 22:41:37,116 - __main__ - INFO - main.py:106 - Application initialized successfully
+2025-08-18 22:41:37,120 - __main__ - INFO - main.py:205 - Application started - showing branding sequence
+2025-08-18 22:41:37,120 - __main__ - INFO - performance_manager.py:343 - Performance monitoring started
+2025-08-18 22:41:37,120 - __main__ - INFO - resource_monitor.py:343 - Resource monitoring started
+2025-08-18 22:41:37,120 - __main__ - INFO - system_manager.py:135 - System health monitoring started
+2025-08-18 22:41:37,120 - __main__ - INFO - power_manager.py:114 - Power management monitoring started
+2025-08-18 22:41:37,120 - ui.branding_screen - INFO - branding_screen.py:347 - Showing branding screen
+2025-08-18 22:41:37,127 - ui.branding_screen - INFO - branding_screen.py:152 - Starting branding animation sequence
+2025-08-18 22:41:37,242 - __main__ - WARNING - performance_manager.py:456 - Critical memory usage: 86.0%
+2025-08-18 22:41:37,243 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:41:37,272 - __main__ - WARNING - resource_monitor.py:98 - ALERT: High Memory Usage - Memory usage at 86.0%
+2025-08-18 22:41:37,272 - __main__ - WARNING - system_manager.py:117 - SYSTEM ALERT: High Memory Usage - Memory usage at 86.0%
+2025-08-18 22:41:37,272 - __main__ - ERROR - resource_monitor.py:96 - ALERT: High System Load - Load average: 4.32
+2025-08-18 22:41:37,272 - __main__ - ERROR - system_manager.py:113 - SYSTEM ALERT: High System Load - Load average: 4.32
+2025-08-18 22:41:37,382 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:41:37,460 - core.error_handler - ERROR - error_handler.py:290 - Error in System Health Monitor: High memory usage: 86.0% (Type: memory, Module: )
+2025-08-18 22:41:37,460 - core.notification_manager - ERROR - notification_manager.py:382 - Failed to display notification: Cannot create graphics instruction outside the main Kivy thread
+2025-08-18 22:41:37,460 - core.error_handler - WARNING - error_handler.py:402 - Unhandled recovery action: RecoveryAction.SYSTEM_RESTART
+2025-08-18 22:41:37,630 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:41:38,397 - __main__ - WARNING - system_manager.py:157 - High memory usage: 85.1%
+2025-08-18 22:41:38,428 - __main__ - ERROR - system_manager.py:253 - Error handling high memory: '<' not supported between instances of 'float' and 'NoneType'
+2025-08-18 22:41:39,712 - __main__ - INFO - update_manager.py:127 - Checking for updates...
+2025-08-18 22:41:40,681 - __main__ - ERROR - update_manager.py:161 - Error checking for updates: 404 Client Error: Not Found for url: https://api.github.com/repos/stosos/stosos/releases
+2025-08-18 22:41:41,905 - ui.branding_screen - INFO - branding_screen.py:215 - Starting initialization sequence
+2025-08-18 22:41:42,391 - __main__ - WARNING - performance_manager.py:456 - Critical memory usage: 86.0%
+2025-08-18 22:41:42,391 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:41:43,002 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:41:47,415 - ui.branding_screen - INFO - branding_screen.py:258 - Branding sequence complete, transitioning to main interface
+2025-08-18 22:41:47,534 - __main__ - WARNING - performance_manager.py:456 - Critical memory usage: 85.8%
+2025-08-18 22:41:47,536 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:41:48,038 - ui.branding_screen - INFO - branding_screen.py:366 - Branding screen completed
+2025-08-18 22:41:48,043 - __main__ - INFO - main.py:233 - Branding complete - initializing main interface
+2025-08-18 22:41:48,043 - modules.dashboard - INFO - dashboard.py:623 - Initializing Dashboard module
+2025-08-18 22:41:48,063 - modules.dashboard - INFO - dashboard.py:631 - Dashboard module initialized successfully
+2025-08-18 22:41:48,625 - core.screen_manager - INFO - screen_manager.py:65 - Module registered successfully: dashboard
+2025-08-18 22:41:48,627 - __main__ - INFO - main.py:397 - Module registered with application: dashboard
+2025-08-18 22:41:48,627 - __main__ - INFO - main.py:255 - Dashboard module registered successfully
+2025-08-18 22:41:48,628 - stosos.modules.test_module - INFO - test_module.py:28 - Initializing test module
+2025-08-18 22:41:48,382 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:41:48,631 - stosos.modules.test_module - INFO - test_module.py:65 - Test module initialized successfully
+2025-08-18 22:41:48,678 - core.screen_manager - INFO - screen_manager.py:65 - Module registered successfully: test_module
+2025-08-18 22:41:48,690 - __main__ - INFO - main.py:397 - Module registered with application: test_module
+2025-08-18 22:41:48,690 - __main__ - INFO - main.py:262 - Test module registered successfully
+2025-08-18 22:41:48,691 - stosos.modules.ui_demo - INFO - ui_demo.py:37 - Initializing UI Demo module
+2025-08-18 22:41:48,698 - core.screen_manager - INFO - screen_manager.py:65 - Module registered successfully: ui_demo
+2025-08-18 22:41:48,698 - __main__ - INFO - main.py:397 - Module registered with application: ui_demo
+2025-08-18 22:41:48,698 - __main__ - INFO - main.py:269 - UI Demo module registered successfully
+2025-08-18 22:41:48,699 - services.google_calendar_service - ERROR - google_calendar_service.py:80 - Google credentials file not found: config/google_credentials.json
+2025-08-18 22:41:48,699 - stosos.modules.calendar - WARNING - calendar_module.py:447 - Google Calendar authentication failed - running in offline mode
+2025-08-18 22:41:48,700 - stosos.modules.calendar - INFO - calendar_module.py:454 - Calendar module initialized successfully
+2025-08-18 22:41:48,705 - core.screen_manager - INFO - screen_manager.py:65 - Module registered successfully: calendar
+2025-08-18 22:41:48,705 - __main__ - INFO - main.py:397 - Module registered with application: calendar
+2025-08-18 22:41:48,705 - __main__ - INFO - main.py:276 - Calendar module registered successfully
+2025-08-18 22:41:48,705 - __main__ - WARNING - main.py:289 - Task Manager module not available: cannot import name 'TaskManagerModule' from 'modules.task_manager' (/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/task_manager.py)
+2025-08-18 22:41:48,710 - __main__ - ERROR - main.py:327 - Failed to initialize modules: invalid syntax (idea_board.py, line 728)
+2025-08-18 22:41:48,711 - core.error_handler - ERROR - error_handler.py:290 - Error in Branding completion: invalid syntax (idea_board.py, line 728) (Type: system, Module: )
+2025-08-18 22:41:52,677 - __main__ - WARNING - performance_manager.py:456 - Critical memory usage: 85.4%
+2025-08-18 22:41:52,677 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:41:54,029 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:41:57,308 - __main__ - ERROR - main.py:456 - Application failed to start: StosOSButton._on_touch_down() takes 2 positional arguments but 3 were given

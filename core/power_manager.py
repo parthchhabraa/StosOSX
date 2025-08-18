@@ -16,10 +16,10 @@ from datetime import datetime, timedelta
 from kivy.clock import Clock
 from kivy.event import EventDispatcher
 
-from .logger import stosos_logger
+# Logger will be passed as parameter to avoid circular imports
 from .error_handler import error_handler, ErrorType, ErrorSeverity
 
-logger = stosos_logger.get_logger(__name__)
+# Logger will be set during initialization
 
 
 class PowerState(Enum):
@@ -58,12 +58,19 @@ class PowerManager(EventDispatcher):
     
     __events__ = ('on_power_state_change', 'on_brightness_change', 'on_wake_event')
     
-    def __init__(self, config: Optional[PowerConfig] = None):
+    def __init__(self, config: Optional[PowerConfig] = None, logger=None):
         super().__init__()
         self.config = config or PowerConfig()
         self.current_state = PowerState.ACTIVE
         self.current_brightness = self.config.active_brightness
         self.last_activity_time = time.time()
+        
+        # Set logger (use provided logger or create a basic one)
+        if logger:
+            self.logger = logger
+        else:
+            import logging
+            self.logger = logging.getLogger(__name__)
         
         # Threading and timing
         self._monitor_thread = None
@@ -83,13 +90,13 @@ class PowerManager(EventDispatcher):
         self._state_history = []
         self._wake_events = []
         
-        logger.info("PowerManager initialized")
+        self.logger.info("PowerManager initialized")
     
     def start_monitoring(self):
         """Start power management monitoring"""
         try:
             if self._monitor_running:
-                logger.warning("Power monitoring already running")
+                self.logger.warning("Power monitoring already running")
                 return
             
             self._monitor_running = True
@@ -104,7 +111,7 @@ class PowerManager(EventDispatcher):
             self._set_power_state(PowerState.ACTIVE)
             self._set_brightness(self.config.active_brightness)
             
-            logger.info("Power management monitoring started")
+            self.logger.info("Power management monitoring started")
             
         except Exception as e:
             error_handler.handle_error(
@@ -122,7 +129,7 @@ class PowerManager(EventDispatcher):
             # Restore full brightness on shutdown
             self._set_brightness(self.config.active_brightness)
             
-            logger.info("Power management monitoring stopped")
+            self.logger.info("Power management monitoring stopped")
             
         except Exception as e:
             error_handler.handle_error(
@@ -133,23 +140,23 @@ class PowerManager(EventDispatcher):
         """Register a touch event handler for wake functionality"""
         if handler not in self._touch_handlers:
             self._touch_handlers.append(handler)
-            logger.debug("Touch handler registered")
+            self.logger.debug("Touch handler registered")
     
     def unregister_touch_handler(self, handler: Callable):
         """Unregister a touch event handler"""
         if handler in self._touch_handlers:
             self._touch_handlers.remove(handler)
-            logger.debug("Touch handler unregistered")
+            self.logger.debug("Touch handler unregistered")
     
     def set_voice_wake_callback(self, callback: Callable):
         """Set callback for voice activation wake"""
         self._voice_wake_callback = callback
-        logger.debug("Voice wake callback set")
+        self.logger.debug("Voice wake callback set")
     
     def set_network_wake_callback(self, callback: Callable):
         """Set callback for network command wake"""
         self._network_wake_callback = callback
-        logger.debug("Network wake callback set")
+        self.logger.debug("Network wake callback set")
     
     def on_user_activity(self):
         """Called when user activity is detected"""
@@ -179,7 +186,7 @@ class PowerManager(EventDispatcher):
                 try:
                     handler(touch_data)
                 except Exception as e:
-                    logger.error(f"Touch handler error: {e}")
+                    self.logger.error(f"Touch handler error: {e}")
             
         except Exception as e:
             error_handler.handle_error(
@@ -192,7 +199,7 @@ class PowerManager(EventDispatcher):
             if self.current_state == PowerState.ACTIVE:
                 return  # Already active
             
-            logger.info(f"Waking display from {self.current_state.value} (source: {source})")
+            self.logger.info(f"Waking display from {self.current_state.value} (source: {source})")
             
             # Record wake event
             self._record_wake_event(source)
@@ -233,7 +240,7 @@ class PowerManager(EventDispatcher):
         """Force display into sleep mode"""
         try:
             with self._state_lock:
-                logger.info("Forcing display sleep")
+                self.logger.info("Forcing display sleep")
                 self._set_power_state(PowerState.SLEEP)
                 self._set_brightness(self.config.sleep_brightness)
             
@@ -247,7 +254,7 @@ class PowerManager(EventDispatcher):
         try:
             brightness = max(0, min(100, brightness))
             self._set_brightness(brightness)
-            logger.info(f"Brightness manually set to {brightness}%")
+            self.logger.info(f"Brightness manually set to {brightness}%")
             
         except Exception as e:
             error_handler.handle_error(
@@ -294,7 +301,7 @@ class PowerManager(EventDispatcher):
     
     def _monitor_loop(self):
         """Main monitoring loop (runs in separate thread)"""
-        logger.debug("Power monitoring loop started")
+        self.logger.debug("Power monitoring loop started")
         
         while self._monitor_running:
             try:
@@ -329,7 +336,7 @@ class PowerManager(EventDispatcher):
                                 0
                             )
                     except Exception as e:
-                        logger.debug(f"Voice wake check error: {e}")
+                        self.logger.debug(f"Voice wake check error: {e}")
                 
                 # Check for network wake (if enabled)
                 if (self.config.enable_network_wake and 
@@ -343,16 +350,16 @@ class PowerManager(EventDispatcher):
                                 0
                             )
                     except Exception as e:
-                        logger.debug(f"Network wake check error: {e}")
+                        self.logger.debug(f"Network wake check error: {e}")
                 
                 # Sleep for monitoring interval
                 time.sleep(1.0)
                 
             except Exception as e:
-                logger.error(f"Power monitoring loop error: {e}")
+                self.logger.error(f"Power monitoring loop error: {e}")
                 time.sleep(5.0)  # Longer sleep on error
         
-        logger.debug("Power monitoring loop stopped")
+        self.logger.debug("Power monitoring loop stopped")
     
     def _set_power_state(self, new_state: PowerState):
         """Set power state and record history"""
@@ -373,7 +380,7 @@ class PowerManager(EventDispatcher):
             if len(self._state_history) > 100:
                 self._state_history = self._state_history[-50:]
             
-            logger.info(f"Power state changed: {old_state.value} -> {new_state.value}")
+            self.logger.info(f"Power state changed: {old_state.value} -> {new_state.value}")
             
             # Dispatch event
             self.dispatch('on_power_state_change', old_state, new_state)
@@ -397,12 +404,12 @@ class PowerManager(EventDispatcher):
                     elif self._brightness_method == "ddcutil":
                         self._set_brightness_ddcutil(brightness)
                     else:
-                        logger.debug(f"No brightness control method available, tracking internally only")
+                        self.logger.debug(f"No brightness control method available, tracking internally only")
                 except Exception as hw_error:
-                    logger.warning(f"Hardware brightness control failed: {hw_error}")
+                    self.logger.warning(f"Hardware brightness control failed: {hw_error}")
                 
                 if old_brightness != brightness:
-                    logger.debug(f"Brightness changed: {old_brightness}% -> {brightness}%")
+                    self.logger.debug(f"Brightness changed: {old_brightness}% -> {brightness}%")
                     self.dispatch('on_brightness_change', old_brightness, brightness)
             
         except Exception as e:
@@ -415,14 +422,14 @@ class PowerManager(EventDispatcher):
         try:
             # Check for Raspberry Pi backlight control
             if os.path.exists("/sys/class/backlight/rpi_backlight/brightness"):
-                logger.info("Using Raspberry Pi backlight control")
+                self.logger.info("Using Raspberry Pi backlight control")
                 return "rpi_backlight"
             
             # Check for xrandr
             try:
                 subprocess.run(["xrandr", "--version"], 
                              capture_output=True, check=True, timeout=5)
-                logger.info("Using xrandr brightness control")
+                self.logger.info("Using xrandr brightness control")
                 return "xrandr"
             except (subprocess.CalledProcessError, FileNotFoundError, subprocess.TimeoutExpired):
                 pass
@@ -431,16 +438,16 @@ class PowerManager(EventDispatcher):
             try:
                 subprocess.run(["ddcutil", "--version"], 
                              capture_output=True, check=True, timeout=5)
-                logger.info("Using ddcutil brightness control")
+                self.logger.info("Using ddcutil brightness control")
                 return "ddcutil"
             except (subprocess.CalledProcessError, FileNotFoundError, subprocess.TimeoutExpired):
                 pass
             
-            logger.warning("No brightness control method detected")
+            self.logger.warning("No brightness control method detected")
             return "none"
             
         except Exception as e:
-            logger.error(f"Error detecting brightness method: {e}")
+            self.logger.error(f"Error detecting brightness method: {e}")
             return "none"
     
     def _set_brightness_rpi_backlight(self, brightness: int):
@@ -500,16 +507,16 @@ class PowerManager(EventDispatcher):
     def _complete_wake_transition(self):
         """Complete the wake transition to active state"""
         try:
-            logger.debug("Completing wake transition...")
+            self.logger.debug("Completing wake transition...")
             with self._state_lock:
-                logger.debug("Acquired state lock, setting to ACTIVE")
+                self.logger.debug("Acquired state lock, setting to ACTIVE")
                 self._set_power_state(PowerState.ACTIVE)
                 self._set_brightness(self.config.active_brightness)
                 self.last_activity_time = time.time()
-                logger.debug("Wake transition completed")
+                self.logger.debug("Wake transition completed")
             
         except Exception as e:
-            logger.error(f"Wake transition completion error: {e}")
+            self.logger.error(f"Wake transition completion error: {e}")
             error_handler.handle_error(
                 e, "Wake transition completion", ErrorType.SYSTEM, ErrorSeverity.MEDIUM
             )
@@ -530,8 +537,9 @@ class PowerManager(EventDispatcher):
         if len(self._wake_events) > 200:
             self._wake_events = self._wake_events[-100:]
         
-        logger.debug(f"Wake event recorded: {source}")
+        self.logger.debug(f"Wake event recorded: {source}")
 
 
-# Global power manager instance
-power_manager = PowerManager()
+# Global power manager instance (will be initialized with proper logger in main.py)
+import logging
+power_manager = PowerManager(logger=logging.getLogger(__name__))

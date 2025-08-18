@@ -63,7 +63,7 @@ except ImportError:
     Animation = MockAnimation
     Cache = MockCache
 
-from .logger import stosos_logger
+# Logger will be passed as parameter to avoid circular imports
 
 
 @dataclass
