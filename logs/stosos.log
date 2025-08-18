@@ -1245,3 +1245,191 @@ ValueError: Test error for framework testing
 2025-08-18 22:41:52,677 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
 2025-08-18 22:41:54,029 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
 2025-08-18 22:41:57,308 - __main__ - ERROR - main.py:456 - Application failed to start: StosOSButton._on_touch_down() takes 2 positional arguments but 3 were given
+2025-08-18 22:45:55,964 - core.power_manager - WARNING - power_manager.py:446 - No brightness control method detected
+2025-08-18 22:45:55,967 - core.power_manager - INFO - power_manager.py:93 - PowerManager initialized
+2025-08-18 22:45:55,972 - core.config_manager - INFO - config_manager.py:30 - Configuration loaded successfully
+2025-08-18 22:45:55,972 - __main__ - INFO - graphics_optimizer.py:403 - Graphics optimization initialized
+2025-08-18 22:45:55,972 - __main__ - INFO - system_manager.py:83 - Performance optimization setup complete
+2025-08-18 22:45:55,977 - __main__ - WARNING - power_manager.py:446 - No brightness control method detected
+2025-08-18 22:45:55,977 - __main__ - INFO - power_manager.py:93 - PowerManager initialized
+2025-08-18 22:46:18,806 - core.power_manager - WARNING - power_manager.py:446 - No brightness control method detected
+2025-08-18 22:46:18,807 - core.power_manager - INFO - power_manager.py:93 - PowerManager initialized
+2025-08-18 22:46:18,811 - core.config_manager - INFO - config_manager.py:30 - Configuration loaded successfully
+2025-08-18 22:46:18,811 - __main__ - INFO - graphics_optimizer.py:403 - Graphics optimization initialized
+2025-08-18 22:46:18,811 - __main__ - INFO - system_manager.py:83 - Performance optimization setup complete
+2025-08-18 22:46:18,816 - __main__ - WARNING - power_manager.py:446 - No brightness control method detected
+2025-08-18 22:46:18,816 - __main__ - INFO - power_manager.py:93 - PowerManager initialized
+2025-08-18 22:46:48,429 - core.power_manager - WARNING - power_manager.py:446 - No brightness control method detected
+2025-08-18 22:46:48,429 - core.power_manager - INFO - power_manager.py:93 - PowerManager initialized
+2025-08-18 22:47:15,444 - core.power_manager - WARNING - power_manager.py:446 - No brightness control method detected
+2025-08-18 22:47:15,445 - core.power_manager - INFO - power_manager.py:93 - PowerManager initialized
+2025-08-18 22:47:15,651 - __main__ - WARNING - power_manager.py:446 - No brightness control method detected
+2025-08-18 22:47:15,651 - __main__ - INFO - power_manager.py:93 - PowerManager initialized
+2025-08-18 22:50:18,301 - core.power_manager - WARNING - power_manager.py:446 - No brightness control method detected
+2025-08-18 22:50:18,307 - core.power_manager - INFO - power_manager.py:93 - PowerManager initialized
+2025-08-18 22:50:18,389 - __main__ - WARNING - power_manager.py:446 - No brightness control method detected
+2025-08-18 22:50:18,389 - __main__ - INFO - power_manager.py:93 - PowerManager initialized
+2025-08-18 22:50:18,389 - __main__ - INFO - test_app_no_modules.py:54 - Starting Test StosOS Desktop Environment
+2025-08-18 22:50:18,390 - core.config_manager - INFO - config_manager.py:30 - Configuration loaded successfully
+2025-08-18 22:50:18,390 - __main__ - INFO - graphics_optimizer.py:403 - Graphics optimization initialized
+2025-08-18 22:50:18,390 - __main__ - INFO - system_manager.py:83 - Performance optimization setup complete
+2025-08-18 22:50:18,395 - __main__ - INFO - test_app_no_modules.py:78 - Test application built successfully
+2025-08-18 22:50:18,398 - __main__ - INFO - test_app_no_modules.py:90 - Test application started
+2025-08-18 22:50:18,398 - __main__ - INFO - performance_manager.py:343 - Performance monitoring started
+2025-08-18 22:50:18,398 - __main__ - INFO - resource_monitor.py:343 - Resource monitoring started
+2025-08-18 22:50:18,398 - __main__ - INFO - system_manager.py:135 - System health monitoring started
+2025-08-18 22:50:18,398 - __main__ - INFO - power_manager.py:114 - Power management monitoring started
+2025-08-18 22:50:18,398 - __main__ - INFO - test_app_no_modules.py:98 - Test application startup completed
+2025-08-18 22:50:18,514 - __main__ - WARNING - performance_manager.py:456 - Critical memory usage: 85.5%
+2025-08-18 22:50:18,515 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:50:18,515 - __main__ - WARNING - resource_monitor.py:98 - ALERT: High Memory Usage - Memory usage at 85.4%
+2025-08-18 22:50:18,537 - __main__ - WARNING - system_manager.py:117 - SYSTEM ALERT: High Memory Usage - Memory usage at 85.4%
+2025-08-18 22:50:18,537 - __main__ - WARNING - resource_monitor.py:98 - ALERT: Elevated System Load - Load average: 3.19
+2025-08-18 22:50:18,537 - __main__ - WARNING - system_manager.py:117 - SYSTEM ALERT: Elevated System Load - Load average: 3.19
+2025-08-18 22:50:22,448 - __main__ - INFO - system_manager.py:58 - Received signal 15, initiating graceful shutdown
+2025-08-18 22:50:22,450 - __main__ - INFO - system_manager.py:273 - Starting graceful shutdown
+2025-08-18 22:50:23,648 - __main__ - WARNING - performance_manager.py:459 - High memory usage: 84.0%
+2025-08-18 22:50:23,648 - __main__ - WARNING - performance_manager.py:464 - High CPU usage: 83.3%
+2025-08-18 22:50:28,452 - __main__ - INFO - performance_manager.py:350 - Performance monitoring stopped
+2025-08-18 22:50:28,878 - __main__ - INFO - resource_monitor.py:350 - Resource monitoring stopped
+2025-08-18 22:50:28,879 - __main__ - INFO - system_manager.py:147 - System health monitoring stopped
+2025-08-18 22:50:28,879 - __main__ - ERROR - system_manager.py:312 - Error saving system state: 'ConfigManager' object has no attribute 'get_data_dir'
+2025-08-18 22:50:28,879 - __main__ - INFO - system_manager.py:288 - Graceful shutdown completed
+2025-08-18 22:50:54,597 - core.power_manager - WARNING - power_manager.py:446 - No brightness control method detected
+2025-08-18 22:50:54,598 - core.power_manager - INFO - power_manager.py:93 - PowerManager initialized
+2025-08-18 22:50:54,812 - __main__ - INFO - main.py:458 - Starting StosOS application
+2025-08-18 22:50:54,818 - __main__ - WARNING - power_manager.py:446 - No brightness control method detected
+2025-08-18 22:50:54,818 - __main__ - INFO - power_manager.py:93 - PowerManager initialized
+2025-08-18 22:50:54,819 - __main__ - INFO - main.py:58 - Starting StosOS Desktop Environment
+2025-08-18 22:50:54,819 - core.config_manager - INFO - config_manager.py:30 - Configuration loaded successfully
+2025-08-18 22:50:54,819 - __main__ - INFO - graphics_optimizer.py:403 - Graphics optimization initialized
+2025-08-18 22:50:54,819 - __main__ - INFO - system_manager.py:83 - Performance optimization setup complete
+2025-08-18 22:50:54,821 - __main__ - INFO - main.py:175 - Power management initialized
+2025-08-18 22:50:54,825 - __main__ - INFO - main.py:147 - Main interface created
+2025-08-18 22:50:54,825 - __main__ - INFO - main.py:106 - Application initialized successfully
+2025-08-18 22:50:54,827 - __main__ - INFO - main.py:205 - Application started - showing branding sequence
+2025-08-18 22:50:54,827 - __main__ - INFO - performance_manager.py:343 - Performance monitoring started
+2025-08-18 22:50:54,827 - __main__ - INFO - resource_monitor.py:343 - Resource monitoring started
+2025-08-18 22:50:54,827 - __main__ - INFO - system_manager.py:135 - System health monitoring started
+2025-08-18 22:50:54,828 - __main__ - INFO - power_manager.py:114 - Power management monitoring started
+2025-08-18 22:50:54,828 - ui.branding_screen - INFO - branding_screen.py:347 - Showing branding screen
+2025-08-18 22:50:54,841 - ui.branding_screen - INFO - branding_screen.py:152 - Starting branding animation sequence
+2025-08-18 22:50:54,950 - __main__ - WARNING - performance_manager.py:456 - Critical memory usage: 85.6%
+2025-08-18 22:50:54,950 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:50:54,973 - __main__ - WARNING - resource_monitor.py:98 - ALERT: High Memory Usage - Memory usage at 85.6%
+2025-08-18 22:50:54,974 - __main__ - WARNING - system_manager.py:117 - SYSTEM ALERT: High Memory Usage - Memory usage at 85.6%
+2025-08-18 22:50:54,974 - __main__ - ERROR - resource_monitor.py:96 - ALERT: High System Load - Load average: 4.14
+2025-08-18 22:50:54,974 - __main__ - ERROR - system_manager.py:113 - SYSTEM ALERT: High System Load - Load average: 4.14
+2025-08-18 22:50:55,309 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:50:55,590 - core.error_handler - ERROR - error_handler.py:290 - Error in System Health Monitor: High memory usage: 85.7% (Type: memory, Module: )
+2025-08-18 22:50:55,591 - core.notification_manager - ERROR - notification_manager.py:382 - Failed to display notification: Cannot create graphics instruction outside the main Kivy thread
+2025-08-18 22:50:55,591 - core.error_handler - WARNING - error_handler.py:402 - Unhandled recovery action: RecoveryAction.SYSTEM_RESTART
+2025-08-18 22:50:58,747 - ui.branding_screen - INFO - branding_screen.py:215 - Starting initialization sequence
+2025-08-18 22:50:58,865 - __main__ - INFO - update_manager.py:127 - Checking for updates...
+2025-08-18 22:50:59,517 - __main__ - ERROR - update_manager.py:161 - Error checking for updates: 404 Client Error: Not Found for url: https://api.github.com/repos/stosos/stosos/releases
+2025-08-18 22:51:00,082 - __main__ - WARNING - performance_manager.py:456 - Critical memory usage: 85.4%
+2025-08-18 22:51:00,083 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:51:00,573 - __main__ - WARNING - resource_monitor.py:98 - ALERT: Elevated System Load - Load average: 3.81
+2025-08-18 22:51:00,573 - __main__ - WARNING - system_manager.py:117 - SYSTEM ALERT: Elevated System Load - Load average: 3.81
+2025-08-18 22:51:04,259 - ui.branding_screen - INFO - branding_screen.py:258 - Branding sequence complete, transitioning to main interface
+2025-08-18 22:51:04,878 - ui.branding_screen - INFO - branding_screen.py:366 - Branding screen completed
+2025-08-18 22:51:04,878 - __main__ - INFO - main.py:233 - Branding complete - initializing main interface
+2025-08-18 22:51:04,878 - __main__ - INFO - main.py:236 - TEMPORARY: Skipping module initialization to test for recursion
+2025-08-18 22:51:04,879 - __main__ - INFO - main.py:352 - Transitioned to main interface
+2025-08-18 22:51:05,224 - __main__ - WARNING - performance_manager.py:459 - High memory usage: 85.0%
+2025-08-18 22:51:10,340 - __main__ - WARNING - performance_manager.py:459 - High memory usage: 84.1%
+2025-08-18 22:51:15,455 - __main__ - WARNING - performance_manager.py:459 - High memory usage: 83.9%
+2025-08-18 22:51:20,572 - __main__ - WARNING - performance_manager.py:459 - High memory usage: 83.9%
+2025-08-18 22:51:24,947 - __main__ - INFO - power_manager.py:383 - Power state changed: active -> dimmed
+2025-08-18 22:51:25,210 - __main__ - INFO - main.py:362 - Application stopping
+2025-08-18 22:51:25,687 - __main__ - WARNING - performance_manager.py:459 - High memory usage: 84.9%
+2025-08-18 22:51:26,880 - __main__ - INFO - performance_manager.py:350 - Performance monitoring stopped
+2025-08-18 22:51:28,881 - __main__ - INFO - resource_monitor.py:350 - Resource monitoring stopped
+2025-08-18 22:51:28,881 - __main__ - INFO - system_manager.py:147 - System health monitoring stopped
+2025-08-18 22:51:28,965 - __main__ - INFO - power_manager.py:132 - Power management monitoring stopped
+2025-08-18 22:52:08,640 - core.power_manager - WARNING - power_manager.py:446 - No brightness control method detected
+2025-08-18 22:52:08,641 - core.power_manager - INFO - power_manager.py:93 - PowerManager initialized
+2025-08-18 22:52:08,853 - __main__ - INFO - main.py:524 - Starting StosOS application
+2025-08-18 22:52:08,860 - __main__ - WARNING - power_manager.py:446 - No brightness control method detected
+2025-08-18 22:52:08,861 - __main__ - INFO - power_manager.py:93 - PowerManager initialized
+2025-08-18 22:52:08,861 - __main__ - INFO - main.py:58 - Starting StosOS Desktop Environment
+2025-08-18 22:52:08,861 - core.config_manager - INFO - config_manager.py:30 - Configuration loaded successfully
+2025-08-18 22:52:08,862 - __main__ - INFO - graphics_optimizer.py:403 - Graphics optimization initialized
+2025-08-18 22:52:08,862 - __main__ - INFO - system_manager.py:83 - Performance optimization setup complete
+2025-08-18 22:52:08,864 - __main__ - INFO - main.py:175 - Power management initialized
+2025-08-18 22:52:08,867 - __main__ - INFO - main.py:147 - Main interface created
+2025-08-18 22:52:08,868 - __main__ - INFO - main.py:106 - Application initialized successfully
+2025-08-18 22:52:08,869 - __main__ - INFO - main.py:205 - Application started - showing branding sequence
+2025-08-18 22:52:08,869 - __main__ - INFO - performance_manager.py:343 - Performance monitoring started
+2025-08-18 22:52:08,869 - __main__ - INFO - resource_monitor.py:343 - Resource monitoring started
+2025-08-18 22:52:08,869 - __main__ - INFO - system_manager.py:135 - System health monitoring started
+2025-08-18 22:52:08,869 - __main__ - INFO - power_manager.py:114 - Power management monitoring started
+2025-08-18 22:52:08,869 - ui.branding_screen - INFO - branding_screen.py:347 - Showing branding screen
+2025-08-18 22:52:08,882 - ui.branding_screen - INFO - branding_screen.py:152 - Starting branding animation sequence
+2025-08-18 22:52:08,984 - __main__ - WARNING - performance_manager.py:456 - Critical memory usage: 86.0%
+2025-08-18 22:52:08,985 - __main__ - WARNING - resource_monitor.py:98 - ALERT: High Memory Usage - Memory usage at 85.9%
+2025-08-18 22:52:08,985 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:52:08,985 - __main__ - WARNING - system_manager.py:117 - SYSTEM ALERT: High Memory Usage - Memory usage at 85.9%
+2025-08-18 22:52:09,008 - __main__ - ERROR - resource_monitor.py:96 - ALERT: High System Load - Load average: 5.27
+2025-08-18 22:52:09,008 - __main__ - ERROR - system_manager.py:113 - SYSTEM ALERT: High System Load - Load average: 5.27
+2025-08-18 22:52:09,115 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:52:09,364 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:52:09,630 - core.error_handler - ERROR - error_handler.py:290 - Error in System Health Monitor: High memory usage: 85.8% (Type: memory, Module: )
+2025-08-18 22:52:09,631 - core.notification_manager - ERROR - notification_manager.py:382 - Failed to display notification: Cannot create graphics instruction outside the main Kivy thread
+2025-08-18 22:52:09,631 - core.error_handler - WARNING - error_handler.py:402 - Unhandled recovery action: RecoveryAction.SYSTEM_RESTART
+2025-08-18 22:52:09,913 - __main__ - WARNING - system_manager.py:157 - High memory usage: 85.3%
+2025-08-18 22:52:09,951 - __main__ - ERROR - system_manager.py:253 - Error handling high memory: '<' not supported between instances of 'NoneType' and 'float'
+2025-08-18 22:52:12,784 - ui.branding_screen - INFO - branding_screen.py:215 - Starting initialization sequence
+2025-08-18 22:52:12,792 - __main__ - INFO - update_manager.py:127 - Checking for updates...
+2025-08-18 22:52:13,251 - __main__ - ERROR - update_manager.py:161 - Error checking for updates: 404 Client Error: Not Found for url: https://api.github.com/repos/stosos/stosos/releases
+2025-08-18 22:52:14,125 - __main__ - WARNING - performance_manager.py:456 - Critical memory usage: 85.4%
+2025-08-18 22:52:14,125 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:52:14,736 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:52:18,277 - ui.branding_screen - INFO - branding_screen.py:258 - Branding sequence complete, transitioning to main interface
+2025-08-18 22:52:18,896 - ui.branding_screen - INFO - branding_screen.py:366 - Branding screen completed
+2025-08-18 22:52:18,896 - __main__ - INFO - main.py:233 - Branding complete - initializing main interface
+2025-08-18 22:52:18,896 - __main__ - INFO - main.py:338 - Starting safe module initialization...
+2025-08-18 22:52:18,896 - __main__ - INFO - main.py:350 - Testing Dashboard module...
+2025-08-18 22:52:18,897 - __main__ - INFO - main.py:359 - Registering Dashboard module...
+2025-08-18 22:52:18,897 - modules.dashboard - INFO - dashboard.py:623 - Initializing Dashboard module
+2025-08-18 22:52:18,911 - modules.dashboard - INFO - dashboard.py:631 - Dashboard module initialized successfully
+2025-08-18 22:52:18,911 - core.screen_manager - INFO - screen_manager.py:65 - Module registered successfully: dashboard
+2025-08-18 22:52:18,912 - __main__ - INFO - main.py:469 - Module registered with application: dashboard
+2025-08-18 22:52:18,912 - __main__ - INFO - main.py:361 - Dashboard module registered successfully
+2025-08-18 22:52:18,912 - __main__ - INFO - main.py:350 - Testing Test module...
+2025-08-18 22:52:18,912 - __main__ - INFO - main.py:359 - Registering Test module...
+2025-08-18 22:52:18,912 - stosos.modules.test_module - INFO - test_module.py:28 - Initializing test module
+2025-08-18 22:52:18,912 - stosos.modules.test_module - INFO - test_module.py:65 - Test module initialized successfully
+2025-08-18 22:52:18,913 - core.screen_manager - INFO - screen_manager.py:65 - Module registered successfully: test_module
+2025-08-18 22:52:18,913 - __main__ - INFO - main.py:469 - Module registered with application: test_module
+2025-08-18 22:52:18,913 - __main__ - INFO - main.py:361 - Test module registered successfully
+2025-08-18 22:52:18,913 - __main__ - INFO - main.py:350 - Testing UI Demo module...
+2025-08-18 22:52:18,913 - __main__ - INFO - main.py:359 - Registering UI Demo module...
+2025-08-18 22:52:18,913 - stosos.modules.ui_demo - INFO - ui_demo.py:37 - Initializing UI Demo module
+2025-08-18 22:52:18,919 - core.screen_manager - INFO - screen_manager.py:65 - Module registered successfully: ui_demo
+2025-08-18 22:52:18,919 - __main__ - INFO - main.py:469 - Module registered with application: ui_demo
+2025-08-18 22:52:18,919 - __main__ - INFO - main.py:361 - UI Demo module registered successfully
+2025-08-18 22:52:18,919 - __main__ - INFO - main.py:350 - Testing Calendar module...
+2025-08-18 22:52:18,919 - __main__ - INFO - main.py:359 - Registering Calendar module...
+2025-08-18 22:52:18,920 - services.google_calendar_service - ERROR - google_calendar_service.py:80 - Google credentials file not found: config/google_credentials.json
+2025-08-18 22:52:18,920 - stosos.modules.calendar - WARNING - calendar_module.py:447 - Google Calendar authentication failed - running in offline mode
+2025-08-18 22:52:18,920 - stosos.modules.calendar - INFO - calendar_module.py:454 - Calendar module initialized successfully
+2025-08-18 22:52:18,925 - core.screen_manager - INFO - screen_manager.py:65 - Module registered successfully: calendar
+2025-08-18 22:52:18,925 - __main__ - INFO - main.py:469 - Module registered with application: calendar
+2025-08-18 22:52:18,925 - __main__ - INFO - main.py:361 - Calendar module registered successfully
+2025-08-18 22:52:18,925 - __main__ - INFO - main.py:380 - Testing optional Task Manager module...
+2025-08-18 22:52:18,925 - __main__ - WARNING - main.py:390 - Task Manager module not available: cannot import name 'TaskManagerModule' from 'modules.task_manager' (/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/task_manager.py)
+2025-08-18 22:52:18,925 - __main__ - INFO - main.py:380 - Testing optional Idea Board module...
+2025-08-18 22:52:18,930 - __main__ - ERROR - main.py:392 - Error with Idea Board module: invalid syntax (idea_board.py, line 728)
+2025-08-18 22:52:18,930 - __main__ - INFO - main.py:380 - Testing optional Study Tracker module...
+2025-08-18 22:52:18,934 - __main__ - WARNING - main.py:390 - Study Tracker module not available: cannot import name 'StudyTrackerModule' from 'modules.study_tracker' (/Users/parthchhabra/Desktop/StosOSRpi/stosos/modules/study_tracker.py)
+2025-08-18 22:52:18,934 - __main__ - INFO - main.py:380 - Testing optional Smart Home module...
+2025-08-18 22:52:18,942 - root - WARNING - google_assistant_service.py:25 - Google Assistant SDK not available - using mock implementation
+2025-08-18 22:52:18,945 - root - WARNING - alexa_service.py:23 - Alexa SDK not available - using mock implementation
+2025-08-18 22:52:18,946 - __main__ - ERROR - main.py:392 - Error with Smart Home module: name 'SmartHomeModule' is not defined
+2025-08-18 22:52:18,946 - __main__ - INFO - main.py:396 - Safe module initialization completed
+2025-08-18 22:52:18,946 - __main__ - INFO - main.py:418 - Transitioned to main interface
+2025-08-18 22:52:19,272 - __main__ - WARNING - performance_manager.py:456 - Critical memory usage: 85.5%
+2025-08-18 22:52:19,272 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:52:20,118 - __main__ - WARNING - performance_manager.py:124 - Performing emergency resource cleanup
+2025-08-18 22:52:23,024 - __main__ - ERROR - main.py:528 - Application failed to start: StosOSButton._on_touch_down() takes 2 positional arguments but 3 were given

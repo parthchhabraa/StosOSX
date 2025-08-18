@@ -232,8 +232,8 @@ class StosOSApp(App):
         try:
             logger.info("Branding complete - initializing main interface")
             
-            # Initialize modules with safe error handling
-            self._initialize_modules_safe()
+            # Initialize modules
+            self._initialize_modules()
             
             # Transition to main interface
             self._transition_to_main_interface()
@@ -246,16 +246,11 @@ class StosOSApp(App):
     def _initialize_modules(self):
         """Initialize and register application modules"""
         try:
-            logger.info("Starting module initialization...")
-            
             # Register dashboard module first (main interface)
-            logger.info("Creating dashboard module...")
             dashboard_module = DashboardModule()
-            logger.info("Dashboard module created, setting config...")
             # Pass config manager to dashboard
             dashboard_module._config_manager = self.config_manager
             dashboard_module._screen_manager = self.screen_manager
-            logger.info("Registering dashboard module...")
             if self.register_module(dashboard_module):
                 logger.info("Dashboard module registered successfully")
             else:
@@ -331,73 +326,6 @@ class StosOSApp(App):
         except Exception as e:
             logger.error(f"Failed to initialize modules: {e}")
             raise
-    
-    def _initialize_modules_safe(self):
-        """Initialize modules one by one with error isolation"""
-        try:
-            logger.info("Starting safe module initialization...")
-            
-            # Test each module individually
-            modules_to_test = [
-                ("Dashboard", lambda: DashboardModule()),
-                ("Test", lambda: TestModule()),
-                ("UI Demo", lambda: UIDemoModule()),
-                ("Calendar", lambda: CalendarModule()),
-            ]
-            
-            for module_name, module_factory in modules_to_test:
-                try:
-                    logger.info(f"Testing {module_name} module...")
-                    module = module_factory()
-                    
-                    # Set config manager if needed
-                    if hasattr(module, '_config_manager'):
-                        module._config_manager = self.config_manager
-                    if hasattr(module, '_screen_manager'):
-                        module._screen_manager = self.screen_manager
-                    
-                    logger.info(f"Registering {module_name} module...")
-                    if self.register_module(module):
-                        logger.info(f"{module_name} module registered successfully")
-                    else:
-                        logger.error(f"Failed to register {module_name} module")
-                        
-                except Exception as e:
-                    logger.error(f"Error with {module_name} module: {e}")
-                    # Continue with other modules
-                    continue
-            
-            # Try optional modules
-            optional_modules = [
-                ("Task Manager", "modules.task_manager", "TaskManagerModule"),
-                ("Idea Board", "modules.idea_board", "IdeaBoardModule"),
-                ("Study Tracker", "modules.study_tracker", "StudyTrackerModule"),
-                ("Smart Home", "modules.smart_home", "SmartHomeModule"),
-            ]
-            
-            for module_name, module_path, class_name in optional_modules:
-                try:
-                    logger.info(f"Testing optional {module_name} module...")
-                    exec(f"from {module_path} import {class_name}")
-                    module = eval(f"{class_name}()")
-                    
-                    if self.register_module(module):
-                        logger.info(f"{module_name} module registered successfully")
-                    else:
-                        logger.error(f"Failed to register {module_name} module")
-                        
-                except ImportError as e:
-                    logger.warning(f"{module_name} module not available: {e}")
-                except Exception as e:
-                    logger.error(f"Error with {module_name} module: {e}")
-                    continue
-            
-            self.main_interface_ready = True
-            logger.info("Safe module initialization completed")
-            
-        except Exception as e:
-            logger.error(f"Failed to initialize modules safely: {e}")
-            # Don't raise - continue with basic interface
     
     def _transition_to_main_interface(self):
         """Transition from branding to main interface"""
