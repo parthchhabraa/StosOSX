@@ -12,9 +12,9 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-# Configuration
-STOSOS_USER="st6b"
-STOSOS_HOME="/home/$STOSOS_USER"
+# Configuration - Dynamic user detection
+STOSOS_USER="$USER"
+STOSOS_HOME="$HOME"
 STOSOS_DIR="$STOSOS_HOME/stosos"
 VENV_DIR="$STOSOS_DIR/venv"
 SERVICE_NAME="stosos"
@@ -29,8 +29,8 @@ log() {
 print_header() {
     echo -e "${BLUE}"
     echo "╔══════════════════════════════════════════════════════════════╗"
-    echo "║                    StosOS Installer                         ║"
-    echo "║              Raspberry Pi Desktop Environment               ║"
+    echo "║                    StosOS Installer                          ║"
+    echo "║              Raspberry Pi Desktop Environment                ║"
     echo "╚══════════════════════════════════════════════════════════════╝"
     echo -e "${NC}"
 }
@@ -58,16 +58,16 @@ print_error() {
 check_requirements() {
     print_step "Checking system requirements"
     
-    # Check if running on Raspberry Pi
-    if ! grep -q "Raspberry Pi" /proc/cpuinfo 2>/dev/null; then
-        print_warning "This script is designed for Raspberry Pi. Continuing anyway..."
+    # Check system type
+    if grep -q "Raspberry Pi" /proc/cpuinfo 2>/dev/null; then
+        print_info "Detected Raspberry Pi - will apply Pi-specific optimizations"
+    else
+        print_info "Detected non-Pi system - using generic optimizations"
     fi
     
-    # Check if running as correct user
-    if [ "$USER" != "$STOSOS_USER" ]; then
-        print_error "Please run this script as user '$STOSOS_USER'"
-        exit 1
-    fi
+    # User detection (now dynamic)
+    print_info "Installing for user: $STOSOS_USER"
+    print_info "Home directory: $STOSOS_HOME"
     
     # Check for required commands
     for cmd in python3 pip3 git systemctl; do
@@ -206,9 +206,10 @@ setup_systemd_service() {
     if [ -f "$STOSOS_DIR/stosos.service" ]; then
         cp "$STOSOS_DIR/stosos.service" "$STOSOS_HOME/.config/systemd/user/"
         
-        # Update paths in service file
-        sed -i "s|/home/st6b/stosos|$STOSOS_DIR|g" "$STOSOS_HOME/.config/systemd/user/stosos.service"
-        sed -i "s|User=st6b|User=$STOSOS_USER|g" "$STOSOS_HOME/.config/systemd/user/stosos.service"
+        # Update service file with current user and paths
+        sed -i "s|STOSOS_USER_PLACEHOLDER|$STOSOS_USER|g" "$STOSOS_HOME/.config/systemd/user/stosos.service"
+        sed -i "s|STOSOS_DIR_PLACEHOLDER|$STOSOS_DIR|g" "$STOSOS_HOME/.config/systemd/user/stosos.service"
+        sed -i "s|UID_PLACEHOLDER|$(id -u)|g" "$STOSOS_HOME/.config/systemd/user/stosos.service"
         
         # Reload systemd and enable service
         systemctl --user daemon-reload
@@ -240,16 +241,23 @@ setup_audio() {
 setup_display() {
     print_step "Configuring display settings"
     
-    # Enable GPU memory split for better graphics performance
-    if ! grep -q "gpu_mem=128" /boot/config.txt; then
-        echo "gpu_mem=128" | sudo tee -a /boot/config.txt
-        print_info "GPU memory split configured"
-    fi
-    
-    # Enable OpenGL driver
-    if ! grep -q "dtoverlay=vc4-kms-v3d" /boot/config.txt; then
-        echo "dtoverlay=vc4-kms-v3d" | sudo tee -a /boot/config.txt
-        print_info "OpenGL driver enabled"
+    # Only configure Pi-specific settings on Raspberry Pi
+    if grep -q "Raspberry Pi" /proc/cpuinfo 2>/dev/null; then
+        print_info "Applying Raspberry Pi display optimizations"
+        
+        # Enable GPU memory split for better graphics performance
+        if [ -f /boot/config.txt ] && ! grep -q "gpu_mem=128" /boot/config.txt; then
+            echo "gpu_mem=128" | sudo tee -a /boot/config.txt
+            print_info "GPU memory split configured"
+        fi
+        
+        # Enable OpenGL driver
+        if [ -f /boot/config.txt ] && ! grep -q "dtoverlay=vc4-kms-v3d" /boot/config.txt; then
+            echo "dtoverlay=vc4-kms-v3d" | sudo tee -a /boot/config.txt
+            print_info "OpenGL driver enabled"
+        fi
+    else
+        print_info "Non-Pi system detected - skipping Pi-specific display configuration"
     fi
     
     print_info "Display settings configured"

@@ -5,12 +5,12 @@ Wants=graphical-session.target
 
 [Service]
 Type=simple
-User=pi
-Group=pi
-WorkingDirectory=/home/pi/stosos
+User=STOSOS_USER_PLACEHOLDER
+Group=STOSOS_USER_PLACEHOLDER
+WorkingDirectory=STOSOS_DIR_PLACEHOLDER
 Environment=DISPLAY=:0
-Environment=PULSE_RUNTIME_PATH=/run/user/1000/pulse
-ExecStart=/home/pi/stosos/venv/bin/python /home/pi/stosos/main.py
+Environment=PULSE_RUNTIME_PATH=/run/user/UID_PLACEHOLDER/pulse
+ExecStart=STOSOS_DIR_PLACEHOLDER/venv/bin/python STOSOS_DIR_PLACEHOLDER/main.py
 ExecStop=/bin/kill -TERM $MAINPID
 Restart=always
 RestartSec=10
@@ -26,7 +26,7 @@ NoNewPrivileges=true
 PrivateTmp=true
 ProtectSystem=strict
 ProtectHome=read-only
-ReadWritePaths=/home/pi/stosos/data /home/pi/stosos/logs /home/pi/stosos/config
+ReadWritePaths=STOSOS_DIR_PLACEHOLDER/data STOSOS_DIR_PLACEHOLDER/logs STOSOS_DIR_PLACEHOLDER/config
 
 [Install]
 WantedBy=graphical-session.target

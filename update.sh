@@ -194,9 +194,10 @@ update_systemd_service() {
         # Copy service file
         cp "$STOSOS_DIR/stosos.service" "$HOME/.config/systemd/user/"
         
-        # Update paths in service file
-        sed -i "s|/home/pi/stosos|$STOSOS_DIR|g" "$HOME/.config/systemd/user/stosos.service"
-        sed -i "s|User=pi|User=$USER|g" "$HOME/.config/systemd/user/stosos.service"
+        # Update service file with current user and paths
+        sed -i "s|STOSOS_USER_PLACEHOLDER|$USER|g" "$HOME/.config/systemd/user/stosos.service"
+        sed -i "s|STOSOS_DIR_PLACEHOLDER|$STOSOS_DIR|g" "$HOME/.config/systemd/user/stosos.service"
+        sed -i "s|UID_PLACEHOLDER|$(id -u)|g" "$HOME/.config/systemd/user/stosos.service"
         
         # Reload systemd
         systemctl --user daemon-reload
